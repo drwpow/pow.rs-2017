@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - blog</title>
+	<subtitle>the personal site of Drew Powers</subtitle>
+	<link href="https://pow.rs/blog/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://pow.rs/blog/"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-08-26T00:00:00+00:00</updated>
+	<id>https://pow.rs/blog/atom.xml</id>
+	<entry xml:lang="en">
+		<title>did we fuck up the internet? part 1</title>
+		<published>2020-08-26T00:00:00+00:00</published>
+		<updated>2020-08-26T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/did-we-fuck-up-the-internet-pt-1/" type="text/html"/>
+		<id>https://pow.rs/blog/did-we-fuck-up-the-internet-pt-1/</id>
+		<content type="html">&lt;p&gt;2020 has been… a year. I have neither the time nor energy to really describe all the extreme,
+heartbreaking, life-shattering events in 2020. So I won’t.&lt;&#x2F;p&gt;
+&lt;p&gt;There are lots of “was the internet a mistake?” blog posts (“we’re monkeys that tricked rocks to
+think; we deserve what we get! ha ha”), but they’re a bit melodramatic. I’ve never written one
+(besides a mild &lt;a href=&quot;.&#x2F;was-html-a-mistake.html&quot;&gt;questioning of HTML&lt;&#x2F;a&gt;). I’m pretty bad in general at
+feeding off sensationalism. I think I might even irrationally avoid it.&lt;&#x2F;p&gt;
+&lt;p&gt;However, recent events have led me to question if our current trajectory of building the web is the
+right one, for the the first time in my 11+ year professional career of web development (though take
+that with a grain of salt—2020 has me questioning everything my life has led to so far). But by
+“direction” I don’t mean it shouldn’t exist. Yes, I believe in radical democratization of knowledge.
+Yes, I believe the internet has the capability to be a great social equalizer. Yes, I believe open
+access to knowledge is the most ethical thing I can probably do with my life. Yes, yes, yes.&lt;&#x2F;p&gt;
+&lt;p&gt;But, rather, I’m questioning our execution of it thusfar. Our understanding and &lt;a href=&quot;https:&#x2F;&#x2F;www.apa.org&#x2F;members&#x2F;content&#x2F;social-media-research&quot;&gt;relationship with
+the internet has evolved&lt;&#x2F;a&gt; since its inception. And perhaps—just perhaps—our collective
+first stab at one of the most important transformations in human history wasn’t completely perfect
+only 20-something years in.&lt;&#x2F;p&gt;
+&lt;p&gt;What follows are my thoughts leading up to this questioning. Part 1 (this post) will outline what
+led up to now by highlighting some notable discussions happening in the community. The following
+parts will outline whatever harebrained solutions I think may get us out of this giant-ass digital
+pickle.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-mozilla-layoffs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-mozilla-layoffs&quot; aria-label=&quot;Anchor link for: the-mozilla-layoffs&quot;&gt;🔗&lt;&#x2F;a&gt;the Mozilla layoffs&lt;&#x2F;h3&gt;
+&lt;p&gt;Our journey begins with &lt;a href=&quot;https:&#x2F;&#x2F;www.theverge.com&#x2F;2020&#x2F;8&#x2F;11&#x2F;21363424&#x2F;mozilla-layoffs-quarter-staff-250-people-new-revenue-focus&quot;&gt;Mozilla laying off 25% of its staff in August 2020&lt;&#x2F;a&gt;.
+Software layoffs suck in general, but they &lt;em&gt;really&lt;&#x2F;em&gt; suck when they carry global impact. An extreme
+(but possible) take on the outcome is: this is the &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;chriscoyier&#x2F;status&#x2F;1296573362223759361?s=20&quot;&gt;death of Firefox&lt;&#x2F;a&gt; and MDN as we know it
+(&lt;a href=&quot;https:&#x2F;&#x2F;blog.rust-lang.org&#x2F;2020&#x2F;08&#x2F;18&#x2F;laying-the-foundation-for-rusts-future.html?ref=hvper.com&quot;&gt;Rust may be OK&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;If Firefox goes, then the burden of the internet rests practically on the shoulders of Chromium (if
+you’re reading this in the far future, remember that &lt;a href=&quot;https:&#x2F;&#x2F;www.theverge.com&#x2F;2019&#x2F;5&#x2F;6&#x2F;18527550&#x2F;microsoft-chromium-edge-google-history-collaboration&quot;&gt;Microsoft recently abandoned their historic
+browser project in favor of Chromium&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;At worst, such monopolistic control over the internet is so dangerous it had to be held in check by
+a &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;United_States_v._Microsoft_Corp.&quot;&gt;2001 Supreme Court ruling&lt;&#x2F;a&gt;. At best, the responsibility of stewarding the
+development of &lt;em&gt;the entire internet&lt;&#x2F;em&gt; is so monumental, it crushes any mere team of mortals tasked
+with it. Either way, if Chromium is the last browser standing, it’s bad news for all.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you think the web has almost &#x27;priced itself out of the market&#x27; in terms of complexity if only
+1-2 organisations are capable of building rendering engines for it?&lt;&#x2F;p&gt;
+&lt;p&gt;Microsoft gave up, Mozilla will struggle as you say.&lt;&#x2F;p&gt;
+&lt;p&gt;— &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;i&#x2F;status&#x2F;1296573362223759361&quot;&gt;Mike Healey on Aug 20&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I guess there’s WebKit still 🤷‍♂️. Until Apple remembers they’re supposed to maintain it.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;an-ecosystem-fracturing-further&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#an-ecosystem-fracturing-further&quot; aria-label=&quot;Anchor link for: an-ecosystem-fracturing-further&quot;&gt;🔗&lt;&#x2F;a&gt;an ecosystem fracturing (further)&lt;&#x2F;h3&gt;
+&lt;p&gt;We pause there, and join the developer discussion in another part of the dev sphere, where people
+(like myself) are having existential meltdowns over what they’ve been doing their entire career.
+&lt;em&gt;&lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;05&#x2F;10&#x2F;spa-fatigue.html&quot;&gt;Second-guessing the modern web&lt;&#x2F;a&gt;&lt;&#x2F;em&gt; by Tom MacWright in May 2020 comes to
+mind as a post at the center of the discussion questioning whether or not our current JS-heavy
+trajectory is &lt;em&gt;evolution&lt;&#x2F;em&gt; or &lt;em&gt;de-evolution&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Sure, JS has always had nay-sayers. &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@ericclemmons&#x2F;javascript-fatigue-48d4011b6fc4&quot;&gt;JavaScript fatigue&lt;&#x2F;a&gt; had been questioning this
+direction since 2015. And there have been no shortage of the “get off my lawn“ old guard complaining
+about any attempt at replacing jQuery (&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;search?q=%40thomasfuchs%20react&amp;amp;src=typed_query&quot;&gt;link&lt;&#x2F;a&gt;). However, MacWright’s post was a more
+considered viewpoint that hit just at the right time, finding agreement among the old guard &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;dan_abramov&#x2F;status&#x2F;1259614150386425858?s=20&quot;&gt;as well
+as the new React folk&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So after years in the spotlight, JS is under question again. In rough chronological order, here are
+a few notable discussions&#x2F;milestones that amount to some key players in tech all rethinking their
+choices:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;2019: Web Components gain widespread browser support, but &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Rich_Harris&#x2F;status&#x2F;1198332398561353728?s=20&quot;&gt;devs don’t like them&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;2019–2020: websites are over 2MB and &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;scottjehl&#x2F;status&#x2F;1263492890979979264?s=20&quot;&gt;getting bigger&lt;&#x2F;a&gt; thanks to more JS&lt;&#x2F;li&gt;
+&lt;li&gt;Apr 2020: a &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;tkadlec&#x2F;status&#x2F;1252613423361376256?s=20&quot;&gt;pretty damning study of JS frameworks&lt;&#x2F;a&gt; comes out&lt;&#x2F;li&gt;
+&lt;li&gt;May 2020: Tom Wright’s &lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;05&#x2F;10&#x2F;spa-fatigue.html&quot;&gt;Second-guessing the modern web&lt;&#x2F;a&gt; post&lt;&#x2F;li&gt;
+&lt;li&gt;2020: A new (JS-free) static site generator, &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;zachleat&#x2F;status&#x2F;1296817280098205699?s=20&quot;&gt;Eleventy, grows in popularity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Back in 2015, React + webpack were our saviors, solving all our problems and paving the way to a
+bright future of the web. Sure, there were questions, but we all figured the kinks would be hammered
+out in due time.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, at almost 6 years in, the luster has faded. We know that many of our questions (&lt;em&gt;how can I view
+this page if there’s a single JS error?&lt;&#x2F;em&gt;) will never be answered. It’s not that React let us down;
+on the contrary, React was a prolific achievement. But the internet, &lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;08&#x2F;22&#x2F;clean-starts-for-the-web.html&quot;&gt;vast and complex as it
+is&lt;&#x2F;a&gt;, demands more of its tools, and React has proven to be an imperfect solution. That
+leaves us back at no consensus what the future of building the web looks like for all cases, for all
+people.&lt;&#x2F;p&gt;
+&lt;p&gt;Sure, there are, and will continue to be, new experiments that pose new ideas (like recently
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sveltejs&#x2F;svelte&quot;&gt;Svelte&lt;&#x2F;a&gt;). But as of the time of this post, React has been the closest thing to a unifier
+since jQuery, and signs point to it being on the decline, with no clear replacement.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;no-true-path-forward&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#no-true-path-forward&quot; aria-label=&quot;Anchor link for: no-true-path-forward&quot;&gt;🔗&lt;&#x2F;a&gt;no true path forward&lt;&#x2F;h3&gt;
+&lt;p&gt;So we’re at a bit of a jam: both &lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;08&#x2F;22&#x2F;clean-starts-for-the-web.html&quot;&gt;questioning our browser-centric standards process&lt;&#x2F;a&gt;,
+and &lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;05&#x2F;10&#x2F;spa-fatigue.html&quot;&gt;questioning our tools&lt;&#x2F;a&gt;, what &lt;em&gt;are&lt;&#x2F;em&gt; we to do? (…No, seriously, what
+are we to do? That was a real question. Help me out a little.)&lt;&#x2F;p&gt;
+&lt;p&gt;In planning out this post, I was going to highlight an even more fractured ecosystem with the above
+by reminding you, the reader, that the Java&#x2F;Springboot, Laravel&#x2F;PHP, Ruby&#x2F;Rails, Django, and
+Elixir&#x2F;Phoenix communities exist. And have been largely ignoring the Node community. I was going to
+drive that point home, but instead, I’m going to tangent into this &lt;a href=&quot;https:&#x2F;&#x2F;vprise.wordpress.com&#x2F;2005&#x2F;12&#x2F;14&#x2F;ruby-on-rails-demo-video-why-do-people-buy-into-this-shit&#x2F;&quot;&gt;really interesting post from
+2005 ragging on Rails&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Ruby on rails demo video (why do people buy into this shit?)&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In these respects Rails is a step in the wrong direction that will complicate our lives further, …
+In Java I myself can produce the same sort of results in the same amount of time using J2EE even
+without hibernate but with a decent IDE.&lt;&#x2F;p&gt;
+&lt;p&gt;The syntax seemed like a simpler version of JSP with extensive use of scriptlets and no custom
+tags, the IDE doesn’t seem to have even basic features like completion and the documentation seems
+monolithic and dissorganized although when delving into a particular feature it seems quite
+detailed.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I don’t know why, but I found some comfort in the reminder that Rails, a mostly unifying force, was
+met with criticism when it came out (though I don’t know why I would expect any change to be
+received with open, loving arms by this community). That back in 2005, we were decrying the death of
+the internet, or our tooling, or whatever.&lt;&#x2F;p&gt;
+&lt;p&gt;I still see the situation now as far worse as it was back then, but at least I’m reminded that we’ve
+gotten by so far on complete uncertainty and done all right.&lt;&#x2F;p&gt;
+&lt;p&gt;If it’s not clear by now, I’m writing this to bemoan the fact that builders of the web currently are
+fractured with each community solving the same problems other communities have already solved,
+throwing work away, losing ideas and people left-and-right, and generally stressed af. And now
+there’s no end goal in sight. The “did we fuck-up” here is we’ve architected a web that’s never been
+harder to build for, and it’s only getting worse.&lt;&#x2F;p&gt;
+&lt;p&gt;But rather than end on a “doom and gloom” note, we’re going to spin this uncertainty around into a
+creative exercise and use an unclear future as a blank canvas. In part 2, I’d like to shift into
+something a little more fun by outlining some possible futures. We’ll brainstorm a few backup
+plans—Plan A, Plan B, … &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;PPEbmbWuBx4?start=8&amp;amp;end=25&amp;amp;rel=0&quot;&gt;Plan E&lt;&#x2F;a&gt;, etc, A Marvelesque &lt;em&gt;multiverse&lt;&#x2F;em&gt; of possibilities, if you
+will.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Part 2 coming soon!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>responsive type scales: the correct way to handle font sizes in css</title>
+		<published>2020-08-02T00:00:00+00:00</published>
+		<updated>2020-08-02T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/responsive-type-scales-in-css/" type="text/html"/>
+		<id>https://pow.rs/blog/responsive-type-scales-in-css/</id>
+		<content type="html">&lt;p&gt;Are you making typography on the web harder on yourself than it needs to be? Probably. What if I
+told you I could give you a typographic scale that is:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Universal:&lt;&#x2F;strong&gt; works in CSS, Sass, and CSS-in-JS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Simple:&lt;&#x2F;strong&gt; easy to set up, quick to learn&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Stylish:&lt;&#x2F;strong&gt; actually looks good (it follows typographic principles)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Automatically-responsive:&lt;&#x2F;strong&gt; makes responsive text sizes easier than you‘re used to&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Adjustable&lt;&#x2F;strong&gt; you can actually tweak it to taste&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Would you not use it? Well good news, friends, it does exist! And it’s called &lt;strong&gt;Responsive Type
+Scales.&lt;&#x2F;strong&gt; And I don’t know for the life of me why it’s not the norm. Maybe it needs a more
+buzzworthy name. Maybe it needs a landing page (🤔 actually it probably does).&lt;&#x2F;p&gt;
+&lt;p&gt;This blog post will cover:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Responsive Type Scales: the basics&lt;&#x2F;li&gt;
+&lt;li&gt;Responsive Type Scales: the theory&lt;&#x2F;li&gt;
+&lt;li&gt;tips &#x2F; faqs&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;“But is this for me?” You’ll ask. &lt;strong&gt;Yes. Yes, this is for you.&lt;&#x2F;strong&gt; If you type words and put them on
+the internet, you should use this. You can check the “FAQ” section at the end to learn how it works
+with special edge cases and such.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;part-1-responsive-type-scales&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#part-1-responsive-type-scales&quot; aria-label=&quot;Anchor link for: part-1-responsive-type-scales&quot;&gt;🔗&lt;&#x2F;a&gt;part 1: responsive type scales&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;getting-started&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#getting-started&quot; aria-label=&quot;Anchor link for: getting-started&quot;&gt;🔗&lt;&#x2F;a&gt;getting started&lt;&#x2F;h3&gt;
+&lt;p&gt;Typographic scales are a &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Goldilocks_principle&quot;&gt;Goldilocks solution&lt;&#x2F;a&gt;
+to font sizes. We don’t want too many font sizes in our site, but we need just enough to have the
+design look good and have structural hierarchy. We need just the right amount.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’ve ever used “shirt size” names like &lt;code&gt;font-s&lt;&#x2F;code&gt;, &lt;code&gt;font-m&lt;&#x2F;code&gt;, and &lt;code&gt;font-l&lt;&#x2F;code&gt; (small, medium, and
+large, respectively), you’ve likely run into the “too few” end of the spectrum (unless you resort to
+dumb names like &lt;code&gt;font-xxxxl&lt;&#x2F;code&gt;). But the real problem with this approach is this isn’t responsive
+(unless you resort to even dumber names like &lt;code&gt;class=&amp;quot;font-xxxl font-lg-xxxxl&amp;quot;&lt;&#x2F;code&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;A responsive type scale solves all of the above: &lt;strong&gt;gives you just the right amount&lt;&#x2F;strong&gt; (it’s
+configurable, so you can set the right number you need), and &lt;strong&gt;handles responsive font sizes
+elegantly&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;But before we get ahead of ourselves, you’re probably wondering “how does it look in action?” (or
+you just want to copy + paste something and then leave). Let’s dive into an example first to show it
+in practice, then we’ll step back to explain the principles and reasoning. After all, no matter how
+solid a concept is theoretically, will you use it if it has bad DX? Rest assured this is quick to
+learn, easy to use, and solves your font problems.&lt;&#x2F;p&gt;
+&lt;p&gt;To get started, copy some CSS classes into your styles (don’t worry; we’ll explain how we generated
+these numbers later):&lt;&#x2F;p&gt;
+&lt;!-- prettier-ignore --&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* fonts.css *&#x2F;
+&#x2F;* (note: ignore the em values for now and only focus on the class names) *&#x2F;
+
+
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u18 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11.390625em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u17 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9.950627481136905em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u16 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8.692673779389363em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u15 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7.59375em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u14 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6.63375165409127em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u13 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5.795115852926242em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u12 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5.0625em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u11 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4.422501102727513em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u10 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3.8634105686174953em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u9  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3.375em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u8  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.9483340684850083em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u7  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.575607045744997em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u6  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.25em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u5  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.9655560456566725em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u4  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.7170713638299977em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u3  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.5em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u2  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.3103706971044482em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-u1  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.1447142425533319em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d1  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.8735804647362989em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d2  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.7631428283688879em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d3  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.6666666666666666em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d4  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.5823869764908659em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d5  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.5087618855792586em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d6  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.4444444444444444em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d7  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.3882579843272439em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d8  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.3391745903861724em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d9  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.2962962962962963em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d10 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.2588386562181626em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d11 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.22611639359078162em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d12 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.19753086419753085em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d13 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.17255910414544176em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d14 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.15074426239385438em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d15 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.13168724279835392em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d16 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.11503940276362785em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d17 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.10049617492923625em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-d18 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.0877914951989026em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;em&gt;Don’t want to use CSS classes? You could use
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drwpow&#x2F;responsive-typography&#x2F;blob&#x2F;master&#x2F;variables.css&quot;&gt;CSS variables&lt;&#x2F;a&gt; or
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drwpow&#x2F;responsive-typography&#x2F;blob&#x2F;master&#x2F;index.js&quot;&gt;JS values&lt;&#x2F;a&gt; or even Sass
+variables—it is universal after all and you can translate this into whatever works best&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Then just sprinkle the utilities in whenever you need it:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;font-u6&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;I’m an h1 so I’m 6 steps up from the base size&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
+&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h2 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;font-u5&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;
+  I’m an h2 so I’m slightly smaller than h1, but still 5 steps up from the base
+  size
+&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
+
+&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;small &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;font-d1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;I’m 1 step down from the base size&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;small&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;What if that &lt;code&gt;h1&lt;&#x2F;code&gt; tag needs to be a little bigger? No problem; bump it up one to &lt;code&gt;font-u7&lt;&#x2F;code&gt;. Or
+smaller: &lt;code&gt;font-u5&lt;&#x2F;code&gt;. They’re just numbers; you go up (&lt;code&gt;font-u*&lt;&#x2F;code&gt;) or down (&lt;code&gt;font-d*&lt;&#x2F;code&gt;) as you need to.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;nesting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#nesting&quot; aria-label=&quot;Anchor link for: nesting&quot;&gt;🔗&lt;&#x2F;a&gt;nesting&lt;&#x2F;h3&gt;
+&lt;p&gt;Since we’re dealing with &lt;code&gt;em&lt;&#x2F;code&gt;s, we can nest sizes. Say we had an &lt;code&gt;&amp;lt;h1&amp;gt;&lt;&#x2F;code&gt; tag we wanted to be big, but
+inside that we have a subheading we want to be the same size as the base font. How would we
+accomplish that? Easy:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;font-u3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;
+  I’m 3 steps up from the base size
+  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;small &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;font-d3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;I’m the same size as the base (3 - 3)&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;small&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
+&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;By thinking in terms of moving “up” or “down” a scale, you’re starting to think in relationships,
+which is how type works. Typography is less about absolute sizes, and is more about how much bigger
+or smaller one size is to another (how one “relates” to another).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;But if this nests, won’t this be a pain to keep track of when you’re several components deep?&lt;&#x2F;em&gt; If
+you’re working in components, it’s probably smart to reset the font size back to &lt;code&gt;1rem&lt;&#x2F;code&gt; (root font
+size) so sizes within a component are predictable:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;MyComponent &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+  font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* reset font size back to base *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This may seem like an annoyance at first if you haven’t done this before, but this is actually great
+practice. This will be an important principle for responsive sizes going forward.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;responsive-sizes&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#responsive-sizes&quot; aria-label=&quot;Anchor link for: responsive-sizes&quot;&gt;🔗&lt;&#x2F;a&gt;responsive sizes&lt;&#x2F;h3&gt;
+&lt;p&gt;Responsive font sizes can be a nightmare at scale. Fortunately, using this system, &lt;strong&gt;you only have
+to set a component’s base sizes for each breakpoint.&lt;&#x2F;strong&gt; But to add this, let’s copy the the same CSS
+values from above, but this time we’ll use CSS variables and swap out the &lt;code&gt;em&lt;&#x2F;code&gt;s for &lt;code&gt;rem&lt;&#x2F;code&gt;s:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* fonts.css (expanded from above) *&#x2F;
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;root &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+  --font-u18r: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11.390625rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* the “r” in “u18r” stands for “root” *&#x2F;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;--font-u17r: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9.950627481136905rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u16r: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8.692673779389363rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u15r: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7.59375rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* … (add the rest from above) *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then in your component styles, you only need to change the base size for its breakpoints:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;MyComponent &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+  font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-d1r); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* small screens: 1 step down *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@media &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(min-width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;600px&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) {
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;MyComponent &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+    font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* medium screens: base size *&#x2F;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@media &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(min-width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1200px&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) {
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;MyComponent &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+    font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u1r); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* large screens: 1 step up *&#x2F;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@media &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(min-width: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1800px&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) {
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;MyComponent &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+    font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u2r); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* extra large screens: 2 steps up *&#x2F;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You don’t have to do anything else! Because we’re using &lt;code&gt;em&lt;&#x2F;code&gt;s, our components all scaled while
+preserving their typographic relationships. However, for the base component size, we did use &lt;code&gt;rem&lt;&#x2F;code&gt;s
+instead of &lt;code&gt;em&lt;&#x2F;code&gt;s to blow away any nested styles we may have had to deal with otherwise
+(&lt;a href=&quot;https:&#x2F;&#x2F;visly.app&#x2F;blog&#x2F;layout-isolated-components&quot;&gt;following good principles of layout isolation&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;further-reading&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#further-reading&quot; aria-label=&quot;Anchor link for: further-reading&quot;&gt;🔗&lt;&#x2F;a&gt;further reading&lt;&#x2F;h3&gt;
+&lt;p&gt;Congratulations! You’ve just learned the whole system. 🎉 From here you may want to explore the
+following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drwpow&#x2F;responsive-typography&quot;&gt;responsive-typography&lt;&#x2F;a&gt; contains all the code
+above but packaged in a convenient npm wrapper&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;codesandbox.io&#x2F;s&#x2F;responsive-typography-app-mc613?file=&#x2F;src&#x2F;styles.css&quot;&gt;CodeSandbox example&lt;&#x2F;a&gt;
+showing how responsive type scales can work in an app&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But perhaps even after seeing how it works, you have some lingering “why” questions. Such as: &lt;em&gt;how
+big is a “step” in pixels?&lt;&#x2F;em&gt; or &lt;em&gt;what if I don’t like the scale above?&lt;&#x2F;em&gt; or &lt;em&gt;is this really simpler
+than other typographic libraries?&lt;&#x2F;em&gt; Read on to get a little more into why this approach can work for
+everyone.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;part-2-why-responsive-type-scales-work&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#part-2-why-responsive-type-scales-work&quot; aria-label=&quot;Anchor link for: part-2-why-responsive-type-scales-work&quot;&gt;🔗&lt;&#x2F;a&gt;part 2: why responsive type scales work&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Note: this section is completely &lt;strong&gt;optional&lt;&#x2F;strong&gt; to read—you have everything you need to start using a
+responsive type scale already. Everything that follows is theory and extra information if you’d like
+to understand the concepts a bit deeper.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;3-principles-of-a-type-scale&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-principles-of-a-type-scale&quot; aria-label=&quot;Anchor link for: 3-principles-of-a-type-scale&quot;&gt;🔗&lt;&#x2F;a&gt;3 principles of a type scale&lt;&#x2F;h3&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;&#x2F;assets&#x2F;posts&#x2F;responsive-type-scales-in-css&#x2F;hypnerotomachia-poliphili.jpg&quot; alt=&quot;Hypnerotomachia Poliphili&quot; &#x2F;&gt;
+  &lt;figcaption&gt;The &lt;em&gt;Hypnerotomachia Poliphili&lt;&#x2F;em&gt; (try saying that 5 times fast) is a stunning Renaissance-era example of flawless typography. And like all printed material, it uses a typographic scale to achieve its beauty.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;As we mentioned above, typographic scales solve the Goldilocks problem of font sizes: you need just
+enough to make the design feel complete, but not too many.&lt;&#x2F;p&gt;
+&lt;p&gt;Typographic scales are so effective because they’ve had time to mature. At over 600 years old,
+they’re as ancient as the printing press itself (they don’t look a day over 500 though). You’ve
+encountered typographic scales every time you’ve used a word processor like Google Docs. While
+you’ll find some slight variation from program to program, most typographic scales are identical
+save for a few numbers. And they have three guiding principles that are important to keep in mind:
+&lt;strong&gt;they scale exponentially&lt;&#x2F;strong&gt;, are &lt;strong&gt;expressed in steps&lt;&#x2F;strong&gt;, and &lt;strong&gt;prioritize relative sizing over
+absolute&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;principle-1-exponential-scaling&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#principle-1-exponential-scaling&quot; aria-label=&quot;Anchor link for: principle-1-exponential-scaling&quot;&gt;🔗&lt;&#x2F;a&gt;principle 1: exponential scaling&lt;&#x2F;h4&gt;
+&lt;p&gt;The classic type scale you know from almost every word processor is:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;6   7   8   9   10   11   12   14   16   18   21   24   30   36   48   60   72
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Let’s look at the scale increase between the numbers:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;6   7   8   9   10   11   12   14   16   18   21   24   30   36   48   60   72
+------------------------------------------------------------------------------
+  1   1   1   1    1    1    2    2    2    3    3    6    6    12   12   12
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Notice how the numbers &lt;strong&gt;increase exponentially&lt;&#x2F;strong&gt; moving up the scale (it’s not a
+mathematically-perfect exponential equation, but it still exponentially increases at regular
+intervals):&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;                   |
+                +--+
+                |
+                |
+                |
+                |
+                |
+             +--+
+             |
+             |
+          +--+
+      +---+
+------+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The reason for this is that bigger font sizes require bigger increases for contrast. You can
+probably recognize the difference between &lt;code&gt;6px&lt;&#x2F;code&gt; and &lt;code&gt;7px&lt;&#x2F;code&gt; type because that’s a 16.6% increase in
+size. But you can’t tell the difference between &lt;code&gt;71px&lt;&#x2F;code&gt; and &lt;code&gt;72px&lt;&#x2F;code&gt; (1%). So &lt;code&gt;6 -&amp;gt; 7&lt;&#x2F;code&gt; make sense as a
+typographic relationship, but not &lt;code&gt;71 -&amp;gt; 72&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Any type scale we make has to scale exponentially, which means we can mathematically automate it!
+Yay!&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;principle-2-type-scales-are-expressed-in-steps&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#principle-2-type-scales-are-expressed-in-steps&quot; aria-label=&quot;Anchor link for: principle-2-type-scales-are-expressed-in-steps&quot;&gt;🔗&lt;&#x2F;a&gt;principle 2: type scales are expressed in steps&lt;&#x2F;h4&gt;
+&lt;p&gt;Given type scales’ exponential nature, it would follow that we treat them like exponents. For
+example, when we’re dealing with powers of 2, how do we express it? Not as &lt;code&gt;2, 4, 8, 16…&lt;&#x2F;code&gt; but as
+&lt;code&gt;2² 2³ 2⁴ …&lt;&#x2F;code&gt;. Let’s apply that thinking to the type scale: we’ll take the same scale, but number the
+steps themselves. And we’ll give the step itself a number (&lt;code&gt;step² step³ step⁴ …&lt;&#x2F;code&gt;):&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;6   7   8   9   10   11   12   14   16   18   21   24   30   36   48   60   72
+------------------------------------------------------------------------------
+1   2   3   4    5    6    7    8    9   10   11   12   13   14   15   16   17
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Thinking in numbered steps lets you remove all the complexity of conditional logic. You don’t have
+to go “OK so I’m at &lt;code&gt;24px&lt;&#x2F;code&gt;, which means the next step up is &lt;code&gt;+6&lt;&#x2F;code&gt; but the next step down is &lt;code&gt;-3&lt;&#x2F;code&gt;.”
+You simply think in terms of being at a certain step and going up or down.&lt;&#x2F;p&gt;
+&lt;p&gt;In the end, your new scale is just a list of integers, which is much simpler to reason about (this
+is only the bottom row from above):&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;1   2   3   4    5    6    7    8    9   10   11   12   13   14   15   16   17
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Another way to think about this idea is to treat it the same way you would a music scale. You don’t
+say “first I’ll play a &lt;code&gt;440 Hz&lt;&#x2F;code&gt; note followed by &lt;code&gt;493.8833 Hz&lt;&#x2F;code&gt;.” You simply say “I’ll play an A
+note, followed by B.” “A” and “B” are just shorthand names for the tones produced that are easier to
+reason about. In the same way, you don’t have to remember that &lt;code&gt;9&lt;&#x2F;code&gt; was &lt;code&gt;16px&lt;&#x2F;code&gt;; you just know that
+your font size is a &lt;code&gt;9&lt;&#x2F;code&gt; on the scale.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;principle-3-relationships-matter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#principle-3-relationships-matter&quot; aria-label=&quot;Anchor link for: principle-3-relationships-matter&quot;&gt;🔗&lt;&#x2F;a&gt;principle 3: relationships matter&lt;&#x2F;h4&gt;
+&lt;p&gt;Take a look at the following type samples:&lt;&#x2F;p&gt;
+&lt;div style=&quot;display:grid;grid-gap:1.5rem;grid-template-columns:1fr 1fr&quot;&gt;
+  &lt;div&gt;
+    &lt;div&gt;&lt;strong&gt;A&lt;&#x2F;strong&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;fs-u2 mb1 mt2&quot;&gt;&lt;strong&gt;Heading&lt;&#x2F;strong&gt;&lt;&#x2F;div&gt;
+    &lt;div&gt;Paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph&lt;&#x2F;div&gt;
+    &lt;div class=&quot;fs-d2 mt2&quot;&gt;Footnote&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;&lt;strong&gt;B&lt;&#x2F;strong&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;fs-u5 mb2 mt2&quot;&gt;&lt;strong&gt;Heading&lt;&#x2F;strong&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;fs-u2 mb2&quot;&gt;Paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph&lt;&#x2F;div&gt;
+    &lt;div&gt;Footnote&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;What if I told you that the “paragraph” size from Column B was the same value as the “heading” in
+Column A? Inspect it if you don’t believe me! Our brains don’t perceive absolute value as much as we
+think we do. Take this famous optical illusion from Edward H. Adelson:&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;&#x2F;assets&#x2F;posts&#x2F;responsive-type-scales-in-css&#x2F;checkerboard-illusion.jpg&quot; alt=&quot;Checkerboard illusion by Edward H. Adelson&quot; &#x2F;&gt;
+  &lt;figcaption&gt;Are “A” and “B” really the same color? (Yes)&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;The tiles marked “A” and “B” are the exact same RGB value. Our brains perceive one as lighter than
+the other because of their relationships— “B” is surrounded by darker colors, and “A” by lighter
+colors. The illusion works because our brains are hardwired to perceive relative differences (if
+you’re interested in this general subject, see &lt;em&gt;Interaction of Color&lt;&#x2F;em&gt; by Josef Albers).&lt;&#x2F;p&gt;
+&lt;p&gt;Managing a typographic system is the same in that &lt;strong&gt;the relative sizes are more important than
+absolute sizes.&lt;&#x2F;strong&gt; Something isn’t a heading because “headings are &lt;code&gt;32px&lt;&#x2F;code&gt; and that’s the law.”
+Because as soon as your base size increases to &lt;code&gt;32px&lt;&#x2F;code&gt;, headings have to be proportionately bigger to
+match! No, headings are only headings &lt;em&gt;if&lt;&#x2F;em&gt; they’re noticably larger than normal text.&lt;&#x2F;p&gt;
+&lt;p&gt;So how do we deal with relationships? We know that a type scale is expressed in steps already, but
+now we have to think in &lt;strong&gt;relative steps&lt;&#x2F;strong&gt; from one size to another. Taking the scale we had before,
+let’s slide the bottom numbers to center around our base font size—&lt;code&gt;16px&lt;&#x2F;code&gt;—to measure how far away
+other numbers are, relatively:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;6   7   8   9   10   11   12   14   16   18   21   24   30   36   48   60   72
+------------------------------------------------------------------------------
+-8 -7  -6  -5   -4   -3   -2   -1    0   +1   +2   +3   +4   +5   +6   +7   +8
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;We can easily see that &lt;code&gt;16 -&amp;gt; 18&lt;&#x2F;code&gt; is &lt;code&gt;+1 step&lt;&#x2F;code&gt;; &lt;code&gt;16 -&amp;gt; 30&lt;&#x2F;code&gt; is &lt;code&gt;+4 steps&lt;&#x2F;code&gt;; &lt;code&gt;16 -&amp;gt; 9&lt;&#x2F;code&gt; is &lt;code&gt;-4 steps&lt;&#x2F;code&gt;,
+etc. If we move around the scale even more, we notice more interesting relationships. &lt;code&gt;16 -&amp;gt; 30&lt;&#x2F;code&gt; is
+the same “ratio” as &lt;code&gt;30 -&amp;gt; 72&lt;&#x2F;code&gt;. In both cases, there are &lt;code&gt;4 steps&lt;&#x2F;code&gt; in between.&lt;&#x2F;p&gt;
+&lt;p&gt;So now we start to get back to those &lt;code&gt;font-u4&lt;&#x2F;code&gt; CSS classes introduced earlier. See how no matter
+what our base size started with, all that matters is applying the correct number of steps up or
+down? If we just know that we want a heading to be 4 steps above our base size, it gets a
+&lt;code&gt;&amp;lt;h1 class=&amp;quot;font-u4&amp;quot;&amp;gt;&lt;&#x2F;code&gt; class. And if we resize everything else on the page, that typographic
+relationship is preserved. That means &lt;strong&gt;less code to write, and less code to manage.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It takes some work, and relearning, to remap how you’ve thought about font sizes on the web. But
+you’ll be amazed at how much simpler things become when you do.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;building-your-own-scale&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#building-your-own-scale&quot; aria-label=&quot;Anchor link for: building-your-own-scale&quot;&gt;🔗&lt;&#x2F;a&gt;building your own scale&lt;&#x2F;h3&gt;
+&lt;p&gt;Say you are getting the basics of the system, but that exact scale ratio just isn’t working for your
+fonts. This is the basic mathematical formula used, of which full credit goes to
+&lt;a href=&quot;https:&#x2F;&#x2F;spencermortensen.com&#x2F;articles&#x2F;typographic-scale&#x2F;&quot;&gt;Spencer Mortensen&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;𝐹 ^ (𝑛 &#x2F; 𝛥)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You have 2 basic settings to configure: &lt;code&gt;𝐹&lt;&#x2F;code&gt;, the factor for multiplication, and &lt;code&gt;𝛥&lt;&#x2F;code&gt;, the delta
+(distance) between each step. Say you wanted to increase font size &lt;code&gt;2.25×&lt;&#x2F;code&gt; every &lt;code&gt;6&lt;&#x2F;code&gt; steps (my
+personal favorite scale). That would look like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;2.25 ^ (𝑛 &#x2F; 6)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The last variable, &lt;code&gt;𝑛&lt;&#x2F;code&gt;, receives the step number you’re calculating. This is how the example back at
+the beginning of the blog post was generated—by counting up (&lt;code&gt;1&lt;&#x2F;code&gt;, &lt;code&gt;2&lt;&#x2F;code&gt;, &lt;code&gt;3&lt;&#x2F;code&gt;, …):&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;2.25 ^ (1&#x2F;6)      -&amp;gt;    1.1447142426
+2.25 ^ (2&#x2F;6)      -&amp;gt;    1.3103706971
+2.25 ^ (3&#x2F;6)      -&amp;gt;    1.5
+2.25 ^ (4&#x2F;6)      -&amp;gt;    1.7170713638
+2.25 ^ (5&#x2F;6)      -&amp;gt;    1.9655560457
+2.25 ^ (6&#x2F;6)      -&amp;gt;    2.25
+…
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To go down the scale, use negative numbers (&lt;code&gt;-1&lt;&#x2F;code&gt;, &lt;code&gt;-2&lt;&#x2F;code&gt;, &lt;code&gt;-3&lt;&#x2F;code&gt;, …):&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;2.25 ^ (-1&#x2F;6)     -&amp;gt;    0.8735804647
+2.25 ^ (-2&#x2F;6)     -&amp;gt;    0.7631428284
+2.25 ^ (-3&#x2F;6)     -&amp;gt;    0.6666666667
+2.25 ^ (-4&#x2F;6)     -&amp;gt;    0.5823869765
+2.25 ^ (-5&#x2F;6)     -&amp;gt;    0.5087618856
+2.25 ^ (-6&#x2F;6)     -&amp;gt;    0.4444444444
+…
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;em&gt;Tip: want to calculate these a bit more automatically? Try
+&lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;dangodev&#x2F;full&#x2F;ZEzmJaB&quot;&gt;this visual calculator&lt;&#x2F;a&gt; or see the &lt;code&gt;scale()&lt;&#x2F;code&gt; method in JS
+in
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drwpow&#x2F;responsive-typography&#x2F;blob&#x2F;master&#x2F;index.ts#L97&quot;&gt;responsive-typography&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Take the above values and plug them into CSS class names, CSS variables, Sass variables, JS
+variables… whatever your system uses. It’s universal because at the end of the day it’s just &lt;code&gt;em&lt;&#x2F;code&gt;s.&lt;&#x2F;p&gt;
+&lt;p&gt;Now that you know how these numbers are made, you may find that the &lt;code&gt;2.25:6&lt;&#x2F;code&gt; scale isn’t producing
+the results you expected. Try &lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;dangodev&#x2F;full&#x2F;ZEzmJaB&quot;&gt;playing with both numbers&lt;&#x2F;a&gt;
+and seeing what you get. Try it in an existing app! The key is experimentation.&lt;&#x2F;p&gt;
+&lt;p&gt;That wraps up the main meat of the blog posts. What follows from here are tips and FAQs to try and
+take care of remaining questions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;appendix-1-faq&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#appendix-1-faq&quot; aria-label=&quot;Anchor link for: appendix-1-faq&quot;&gt;🔗&lt;&#x2F;a&gt;appendix 1: faq&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;how-does-this-compare-to-x-y-or-z&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-does-this-compare-to-x-y-or-z&quot; aria-label=&quot;Anchor link for: how-does-this-compare-to-x-y-or-z&quot;&gt;🔗&lt;&#x2F;a&gt;how does this compare to x, y, or z?&lt;&#x2F;h4&gt;
+&lt;p&gt;Ever since the idea of responsive design came about, we’ve been inventing complex systems to manage
+typography (or we’ve been ignoring it and hoping the problem goes away 🙈). There are too many to
+list out here, but prominent ones I’ve come across:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blog.typekit.com&#x2F;2016&#x2F;08&#x2F;17&#x2F;flexible-typography-with-css-locks&#x2F;&quot;&gt;Flexible Typography with CSS Locks&lt;&#x2F;a&gt;:
+this is probably the closest to a technically-accurate system, but just look at this
+“human-generated” CSS for &lt;strong&gt;a single font size&lt;&#x2F;strong&gt;:
+&lt;code&gt;line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em)&#x2F;(35 - 21)))&lt;&#x2F;code&gt;. Does your brain work like
+this? Mine doesn’t.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tailwindcss.com&#x2F;docs&#x2F;font-size&#x2F;#app&quot;&gt;Tailwind CSS&lt;&#x2F;a&gt;: here’s their &lt;strong&gt;simple example&lt;&#x2F;strong&gt;:
+&lt;code&gt;&amp;lt;p class=&amp;quot;text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ...&amp;quot;&amp;gt;&lt;&#x2F;code&gt;. Imagine managing all
+that manually across all your markup? No thank you.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;kyleamathews.github.io&#x2F;typography.js&#x2F;&quot;&gt;Typography.js&lt;&#x2F;a&gt;: This requires a runtime? I’d rather
+not have flickering font sizes as my pages load, thank you.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;@material&#x2F;typography&quot;&gt;Material UI&lt;&#x2F;a&gt;: Decent type scale, but not
+responsive.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In short, other proposals have come about, but they’re either too complicated for human-written CSS.
+Or they require a JS runtime for styling, which by default won’t work in a large number of setups.
+I’d argue that responsive type scales strikes the best balance of simplicity and efficiency, and it
+works in every setup.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;how-can-i-use-this-with-multiple-fonts&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-can-i-use-this-with-multiple-fonts&quot; aria-label=&quot;Anchor link for: how-can-i-use-this-with-multiple-fonts&quot;&gt;🔗&lt;&#x2F;a&gt;how can I use this with multiple fonts?&lt;&#x2F;h4&gt;
+&lt;p&gt;When working with multiple fonts, sometimes one scale to “rule them all” will work just fine. But a
+common problem is having different fonts &lt;em&gt;appear&lt;&#x2F;em&gt; bigger or smaller than another at the same pixel
+size. In that case, you’ll need an adjustment number. Say your site has 2 fonts: one for body, and
+another for headings. Say your heading font is feeling a little small when you try and use the same
+scale for everything:&lt;&#x2F;p&gt;
+&lt;!-- prettier-ignore --&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* fonts.css *&#x2F;
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;root &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* your base scale *&#x2F;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;--font-u6: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.25em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u5: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.9655560456566725em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u4: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.7170713638299977em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u3: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.5em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u2: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.3103706971044482em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  --font-u1: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.1447142425533319em&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* heading scale *&#x2F;
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;--heading-adjustment: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.5px&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;* Increase the final size of the heading font *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-heading-u6 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u6) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--heading-adjustment)) }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-heading-u5 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u5) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--heading-adjustment)) }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-heading-u4 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u4) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--heading-adjustment)) }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-heading-u3 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u3) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--heading-adjustment)) }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-heading-u2 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u2) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--heading-adjustment)) }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;font-heading-u1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{ font-size: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--font-u1) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(--heading-adjustment)) }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;We have a &lt;code&gt;--heading-adjustment&lt;&#x2F;code&gt; CSS variable that we’re using to modify the final output value.
+It’s being calculated at the end, so we are still using the same scale, but we can make a minor
+visual tweak to make the typefaces work together better. Simply adjust &lt;code&gt;--heading-adjustment&lt;&#x2F;code&gt; to
+taste. Rinse and repeat for any other typefaces you add to your project.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;can-i-use-this-in-css-in-js&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#can-i-use-this-in-css-in-js&quot; aria-label=&quot;Anchor link for: can-i-use-this-in-css-in-js&quot;&gt;🔗&lt;&#x2F;a&gt;can i use this in CSS-in-JS?&lt;&#x2F;h4&gt;
+&lt;p&gt;Yes (try the
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drwpow&#x2F;responsive-typography#js&quot;&gt;JS import from responsive-typography&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;appendix-2-tips&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#appendix-2-tips&quot; aria-label=&quot;Anchor link for: appendix-2-tips&quot;&gt;🔗&lt;&#x2F;a&gt;appendix 2: tips&lt;&#x2F;h2&gt;
+&lt;p&gt;Some various tips you may find helpful both in adopting responsive type scales, and thinking about
+it in the context of your larger styling system.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;If you’re struggling, try working backwards from pixels.&lt;&#x2F;strong&gt; Say you’re trying to generate your
+own type scale, but you just can’t find the right &lt;code&gt;factor&lt;&#x2F;code&gt; and &lt;code&gt;delta&lt;&#x2F;code&gt; that feels right. Try
+starting with an absolute type scale like &lt;code&gt;12px 14px 16px 18px 21px …&lt;&#x2F;code&gt;, and work backwards into
+the relative type scale. Use &lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;dangodev&#x2F;full&#x2F;ZEzmJaB&quot;&gt;the visual calculator&lt;&#x2F;a&gt; and
+look on the right hand side. How close can you get to recreating your absolute scale? Now you have
+more of a concrete goal to hit than simply turning dials until something “feels right.”&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Hardcode the scale if you can help it.&lt;&#x2F;strong&gt; It might be tempting to write a Sass or JS function to
+generate the scale values. While there’s nothing wrong with that, know that &lt;strong&gt;if you change your
+scale, you change your design.&lt;&#x2F;strong&gt; All the hard work and perfectly-tuned styles have now just gone
+out the window. I like to not have this “typographic restart button” so easily-accessible on a
+team that may not understand the implications.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Rename the CSS classes to whatever you like.&lt;&#x2F;strong&gt; You may not like &lt;code&gt;font-u1&lt;&#x2F;code&gt; or &lt;code&gt;font-d1&lt;&#x2F;code&gt;. Generate
+your &lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;dangodev&#x2F;full&#x2F;ZEzmJaB&quot;&gt;own scale&lt;&#x2F;a&gt; and come up with your own names! Keep
+it short and sweet, but do what’s obvious to you.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Why not both—use CSS AND CSS-in-JS!&lt;&#x2F;strong&gt; It doesn’t hurt to use CSS utility classes AND CSS
+variables AND JS values in your CSS-in-JS. Sometimes you just want a global CSS class; other times
+you need a value in your scoped CSS Modules. There’s no right or wrong here; simply do what saves
+you and your team the most time, both in writing new code and managing existing code.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Reset component styles at the base level.&lt;&#x2F;strong&gt; This is a good practice beyond this blog post! You
+always want your component’s styles to be
+&lt;a href=&quot;https:&#x2F;&#x2F;visly.app&#x2F;blog&#x2F;layout-isolated-components&quot;&gt;isolated from one another&lt;&#x2F;a&gt;, which means
+throwing some resets at the top level. When your components only look good in certain contexts but
+not others, you’re fighting a losing battle.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Avoid global breakpoints if you can help it.&lt;&#x2F;strong&gt; Often people try and have a
+&lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;free-code-camp&#x2F;the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862&quot;&gt;perfect breakpoint system&lt;&#x2F;a&gt;
+in their app. It makes sense—it’s simple, and it’s encouraged in frameworks. But it’s bad because
+global breakpoints don’t care about your actual content. They don’t care that half of your
+components look weird as the page responds. Conversely, component-level media queries are &lt;strong&gt;always
+perfect for every component.&lt;&#x2F;strong&gt; It’s a little extra code, sure, but it’s 100% scalable, and unlike
+global breakpoints, adjusting one component’s breakpoint will never disrupt another. A little
+redundancy can save a lot of headache down the line. Give it a try and prove me wrong!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If this post was helpful, please
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;drwpow&#x2F;responsive-typography&quot;&gt;give responsive-typography a star on GitHub&lt;&#x2F;a&gt; (or
+give me feedback in the issues!)&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>was HTML a mistake?</title>
+		<published>2020-04-19T00:00:00+00:00</published>
+		<updated>2020-04-19T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/was-html-a-mistake/" type="text/html"/>
+		<id>https://pow.rs/blog/was-html-a-mistake/</id>
+		<content type="html">&lt;p&gt;OK, hear me out. Even if &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Betteridge%27s_law_of_headlines&quot;&gt;Betteridge is right&lt;&#x2F;a&gt; and the answer at the end of this blog
+post ends up being “no,” let’s treat the question “was HTML a mistake?” purely as a thought
+experiment. And it may shed light on some of the more frustrating parts of making websites.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-was-html-created&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-was-html-created&quot; aria-label=&quot;Anchor link for: why-was-html-created&quot;&gt;🔗&lt;&#x2F;a&gt;why was HTML created?&lt;&#x2F;h2&gt;
+&lt;figure&gt;&lt;img src=&quot;&#x2F;assets&#x2F;posts&#x2F;was-html-a-mistake&#x2F;tims_editor.gif&quot; alt=&quot;Tim Berners Lee’s WorldWideWeb (Nexus) browser editor&quot; &#x2F;&gt;&lt;figcaption&gt;Tim Berners Lee’s “WorldWideWeb” browser editor (1993) &lt;a href=&quot;https:&#x2F;&#x2F;www.w3.org&#x2F;People&#x2F;Berners-Lee&#x2F;WorldWideWeb.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;&#x2F;a&gt;&lt;&#x2F;figcaption&gt;&lt;&#x2F;figure&gt;
+&lt;p&gt;Tim Berners Lee open-sourced the first browser in 1993 as a &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;WYSIWYG&quot;&gt;WYSIWYG&lt;&#x2F;a&gt; editor. So basically
+an internet-connected Microsoft Word.&lt;&#x2F;p&gt;
+&lt;p&gt;…that’s it. That’s why it was invented. To share docs with other people online. You thought there
+was going to be more history to it? No; it’s not that old.&lt;&#x2F;p&gt;
+&lt;p&gt;Now we’ll fast-forward a few years. Please explain to me how the &lt;em&gt;fuck&lt;&#x2F;em&gt; you might accomplish
+something like this in a WYSIWYG editor:&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;video autoplay=&quot;true&quot; controls muted loop playsinline width=&quot;800&quot; height=&quot;500&quot;&gt;
+    &lt;source src=&quot;&#x2F;publci&#x2F;posts&#x2F;was-html-a-mistake&#x2F;rino-pelle.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
+  &lt;&#x2F;video&gt;
+  &lt;figcaption&gt;The actual homepage of &lt;a href=&quot;https:&#x2F;&#x2F;rino-pelle.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;rino-pelle.com&lt;&#x2F;a&gt;. An actual work of animation art that people actually made, somehow.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;If your answer is “that looks hard to do,” you are absolutely correct. It’s &lt;em&gt;hard&lt;&#x2F;em&gt; trying to trick
+HTML a.k.a. “Microsoft Word Online” into doing something this awesome.&lt;&#x2F;p&gt;
+&lt;p&gt;I, too, bemoan the fact that the &lt;a href=&quot;https:&#x2F;&#x2F;httparchive.org&#x2F;reports&#x2F;page-weight&quot;&gt;average website today weighs &lt;code&gt;2 MB&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;. And it’s easy
+to blame JavaScript, or images, or whatever for that weight. But we’re fooling ourselves if we think
+we can achieve 👆 in under &lt;code&gt;2 MB&lt;&#x2F;code&gt; with our current tools (Rino &amp;amp; Pelle, since you’re wondering, is
+&lt;code&gt;1.87 MB&lt;&#x2F;code&gt; gzipped, unpacking to &lt;code&gt;2.07 MB&lt;&#x2F;code&gt;—pretty close to average, wouldn’t ya say?).&lt;&#x2F;p&gt;
+&lt;p&gt;If the weight of the average website comes from lobbing enough JS at the DOM until we trick it into
+animating, we have 2 paths forward to solve this: either we ditch the JS frameworks and revert the
+web into mostly static documents like &lt;em&gt;The Good Lee&lt;&#x2F;em&gt; intended. Or we don’t use HTML &amp;amp; JS and serve
+something compiled instead.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;if-not-html-then-what&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#if-not-html-then-what&quot; aria-label=&quot;Anchor link for: if-not-html-then-what&quot;&gt;🔗&lt;&#x2F;a&gt;if not HTML, then what?&lt;&#x2F;h2&gt;
+&lt;p&gt;Once upon a time, long before Apple made decisions about the internet, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Adobe_Flash&quot;&gt;Flash&lt;&#x2F;a&gt; existed. And
+it was great. Flash was the defacto way you made cool, rich, interactive experiences. It not only
+delivered futuristic, fun, imaginative, and creative interfaces, it did so on a budget, back in the
+days of dial-up. On computers that had &lt;em&gt;way&lt;&#x2F;em&gt; less memory and resources than our phones do now.&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;div class=&quot;post-yt&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube-nocookie.com&#x2F;embed&#x2F;UHbQmqmmIFk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+  &lt;figcaption&gt;The &lt;strong&gt;2Advanced&lt;&#x2F;strong&gt; site in 2001, the gold standard for cutting-edge web design at the time&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;I’m not saying that Flash itself was the pinnacle of what the web could be, no. There were reasons
+for its demise, and it did compromise a core principle of the web: &lt;em&gt;openness&lt;&#x2F;em&gt; (it not only had
+critical security issues; it was proprietary technology owned by a private corporation and thus not
+a web standard). Still, you have to give Flash credit for giving us the the most imaginative
+interfaces we’ve ever seen outside of sci-fi films.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ll summarize our journey up to this point in a few true, albeit conflicting, statements:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML was invented primarily for &lt;strong&gt;text documents&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;HTML was &lt;strong&gt;not designed&lt;&#x2F;strong&gt; to be highly-interactive&lt;&#x2F;li&gt;
+&lt;li&gt;Full rendering control is best done in a &lt;strong&gt;compiled native application&lt;&#x2F;strong&gt;, like Flash or a
+video game&lt;&#x2F;li&gt;
+&lt;li&gt;Compiled applications are &lt;strong&gt;closed-source&lt;&#x2F;strong&gt; experiences that violate key principles of the
+internet’s open, safe design.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So how do we reconcile this—how do we have our cake and eat it too?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;html5-canvas&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#html5-canvas&quot; aria-label=&quot;Anchor link for: html5-canvas&quot;&gt;🔗&lt;&#x2F;a&gt;…HTML5 canvas?&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;Canvas_API&quot;&gt;HTML5 canvas&lt;&#x2F;a&gt; is a pretty-darn smart spec. It leverages CPU &amp;amp; GPU efficiently for
+rendering, has an OK-ish footprint, and &lt;strong&gt;keeps the source open&lt;&#x2F;strong&gt;. Mind you, it’ll never replace
+native code, but it’s essentially the correct answer to all the above problems—it lets us deliver
+rich, interactive experiences for the web without compromising security or openness.&lt;&#x2F;p&gt;
+&lt;p&gt;But to our earlier point, &lt;strong&gt;canvas isn’t typically smaller than HTML,&lt;&#x2F;strong&gt; so that’s a dead-end
+already. Even if it makes animating &amp;amp; rendering &lt;em&gt;easier and more fun&lt;&#x2F;em&gt;, it’s still JavaScript, except
+you have to build your rendering tools from scratch compared to HTML + CSS.&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;video autoplay=&quot;true&quot; controls muted loop playsinline width=&quot;800&quot; height=&quot;500&quot;&gt;
+    &lt;source src=&quot;&#x2F;assets&#x2F;posts&#x2F;was-html-a-mistake&#x2F;zoomquilt.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
+  &lt;&#x2F;video&gt;
+  &lt;figcaption&gt;Zoomquilt, the greatest Flash experiment ever made, was &lt;a href=&quot;https:&#x2F;&#x2F;zoomquilt.org&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;revived in HTML5 canvas form!&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;Full disclosure: I know this isn’t 100% relevant to this post, but when am I going to get another opportunity to reminisce about Zoomquilt?&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;But let’s assume (thought experiment) there &lt;em&gt;was&lt;&#x2F;em&gt; a way to render crazy-awesome experiences with
+canvas, and it was faster, lighter, and better all-around than HTML. We &lt;em&gt;still&lt;&#x2F;em&gt; couldn’t switch to a
+canvas-dominated internet because &lt;strong&gt;it’s not screen reader-friendly&lt;&#x2F;strong&gt; (unless you &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;meusPartum&#x2F;status&#x2F;1143186195494658048?s=20&quot;&gt;use HTML as a
+base and overlay canvas on top&lt;&#x2F;a&gt;). That would mean most of the internet would be
+unreachable to people with visual impairments. Just how many sites &lt;em&gt;is&lt;&#x2F;em&gt; that?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-is-the-web-now-what-will-it-be&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-is-the-web-now-what-will-it-be&quot; aria-label=&quot;Anchor link for: what-is-the-web-now-what-will-it-be&quot;&gt;🔗&lt;&#x2F;a&gt;what is the web now? what will it be?&lt;&#x2F;h2&gt;
+&lt;p&gt;For as many statistical reports as I read, like “the average weight of websites” and “your users are
+all using mobile phones” and “video is the way to market” (&lt;a href=&quot;https:&#x2F;&#x2F;www.theverge.com&#x2F;2018&#x2F;10&#x2F;17&#x2F;17989712&#x2F;facebook-inaccurate-video-metrics-inflation-lawsuit&quot;&gt;debunked&lt;&#x2F;a&gt;, BTW), I can’t
+remember reading a report that summarized &lt;strong&gt;breakdown of the internet by industry.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;As of Apr 2020, there are an estimated &lt;strong&gt;1.7 billion websites&lt;&#x2F;strong&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;www.internetlivestats.com&#x2F;&quot;&gt;Internet Live Stats&lt;&#x2F;a&gt;) online.
+Assuming that’s true…&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If there are &lt;a href=&quot;https:&#x2F;&#x2F;growthbadger.com&#x2F;blog-stats&#x2F;&quot;&gt;&lt;strong&gt;600 million&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; blogs (most of which are on
+Tumblr), that would mean blogs make up &lt;strong&gt;35% of websites&lt;&#x2F;strong&gt; (&lt;em&gt;this is moving fast—only 65% to
+go!&lt;&#x2F;em&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;Thanks to monopolistic mergers and acquisitions, there are only a handful of popular social media
+sites, so that’s only, like, what? 10? 15?&lt;&#x2F;li&gt;
+&lt;li&gt;There are also a countable number of video&#x2F;entertainment websites that serve online content, too
+(probably about 100 or so, counting the naughty stuff)… but we’re still probably at &lt;strong&gt;35%&lt;&#x2F;strong&gt;
+(&lt;em&gt;shoot; what are the rest?&lt;&#x2F;em&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;If &lt;a href=&quot;https:&#x2F;&#x2F;clutch.co&#x2F;website-builders&#x2F;resources&#x2F;small-business-websites-2018&quot;&gt;&lt;strong&gt;64%&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; of small businesses have a website, and there are… uh… hm. I have no idea how
+many businesses there are on Earth. At least 1%–65% of websites according to my estimates.&lt;&#x2F;li&gt;
+&lt;li&gt;If &lt;a href=&quot;https:&#x2F;&#x2F;w3techs.com&#x2F;&quot;&gt;WordPress powers 35% of all websites&lt;&#x2F;a&gt;, and WordPress sites mean blogs, editorial sites,
+and business sites… wait that overlaps with “blogs” above doesn’t it? Crap.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I honestly have no idea what the internet is made up of 🤷‍♂️, but we can make some sweeping
+generalizations.&lt;&#x2F;p&gt;
+&lt;p&gt;Going by &lt;em&gt;quantity&lt;&#x2F;em&gt; (sheer number of websites), I would guess it’s mostly blogs + brochure websites
+(businesses, restaurants, etc.). The vast majority of these are text-based (HTML).&lt;&#x2F;p&gt;
+&lt;p&gt;When it comes to &lt;em&gt;bandwidth&lt;&#x2F;em&gt;, the data seems to point toward video content (Netflix, YouTube, etc.)
+And video doesn’t apply to our current convo.&lt;&#x2F;p&gt;
+&lt;p&gt;When it comes to &lt;em&gt;users’ time spent online&lt;&#x2F;em&gt;, a good amount is spent on the major social networking
+sites like &lt;em&gt;Instagram&lt;&#x2F;em&gt;, &lt;em&gt;Twitter&lt;&#x2F;em&gt;, &lt;em&gt;TikTok&lt;&#x2F;em&gt;, etc. And that’s a mixture of video and text.&lt;&#x2F;p&gt;
+&lt;p&gt;So all that to say, while it’s hard (impossible?) to give an accurate number of the web that must be
+screen-reader friendly, and thus text-based, it’s safe to say “most.” And if screen reader support
+is essential for most of the internet, &lt;strong&gt;HTML is still the best foundation we have.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;so-betteridge-was-right-then-html-wasn-t-a-mistake&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#so-betteridge-was-right-then-html-wasn-t-a-mistake&quot; aria-label=&quot;Anchor link for: so-betteridge-was-right-then-html-wasn-t-a-mistake&quot;&gt;🔗&lt;&#x2F;a&gt;…so Betteridge was right, then? HTML wasn’t a mistake?&lt;&#x2F;h2&gt;
+&lt;p&gt;Lately I’ve been spending more time with compiled languages (like Rust—which was used to make this
+blog!) and loving them. And I wish we could make the internet more efficient by compiling more (I
+know WebAssembly exists, but that’s not going to replace the DOM). Maybe the love affair the
+internet had with its biggest compiled language to-date, Flash, had its heyday and it’s time to move
+on. Maybe canvas is neat, but shouldn’t upend HTML as the &lt;em&gt;lingua franca&lt;&#x2F;em&gt; of the web.&lt;&#x2F;p&gt;
+&lt;p&gt;Maybe there’s something better on the horizon—but I don’t know what, or how it’ll give us everything
+HTML, CSS, and JS does in a smaller package—but maybe we can serve the same creative, accessible
+internet in under &lt;code&gt;2 MB&lt;&#x2F;code&gt; per page.&lt;&#x2F;p&gt;
+&lt;p&gt;Until then, &lt;strong&gt;HTML appears to still be the best delivery method for serving text-based content.&lt;&#x2F;strong&gt;
+But it doesn’t mean I have to enjoy animating it. And you can bet your bippy if I don’t need screen
+reader support I’m going to be doing some &lt;a href=&quot;https:&#x2F;&#x2F;js1k.com&#x2F;2019-x&#x2F;demo&#x2F;4130&quot;&gt;fun stuff in canvas&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>JavaScript&#x27;s greatest revolution was too quiet</title>
+		<published>2020-03-08T00:00:00+00:00</published>
+		<updated>2020-04-21T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/the-state-of-es-modules-in-2020/" type="text/html"/>
+		<id>https://pow.rs/blog/the-state-of-es-modules-in-2020/</id>
+		<content type="html">&lt;p&gt;&lt;strong&gt;In 2019, a revolution happened in JS.&lt;&#x2F;strong&gt; You may have missed it. All &lt;a href=&quot;https:&#x2F;&#x2F;caniuse.com&#x2F;#feat=es6-module&quot;&gt;major browsers&lt;&#x2F;a&gt;
+and &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@nodejs&#x2F;announcing-core-node-js-support-for-ecmascript-modules-c5d6dc29b663&quot;&gt;Node.js&lt;&#x2F;a&gt; added native support for ES Modules (ESM)—no Babel, transpiling,
+preprocessing, or trickery needed.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’ve written JavaScript in the time before React &amp;amp; webpack, you remember how much of a mess it
+was without &lt;code&gt;import&lt;&#x2F;code&gt; or &lt;code&gt;require()&lt;&#x2F;code&gt;. You had to be intimately familiar with &lt;code&gt;this&lt;&#x2F;code&gt; and lexical
+scoping, otherwise it’d come back to bite you. All JS having global scope (even vendor scripts) was
+&lt;em&gt;hard&lt;&#x2F;em&gt; to do well, which often meant you limited its reach. JavaScript was maligned in other
+programming communities for the things it lacked compared to more mature languages, chiefly of all,
+a module system.&lt;&#x2F;p&gt;
+&lt;p&gt;That changed in 2019, when the ESM proposal became a reality, not something that only lived in the
+make-believe world of webpack &amp;amp; Babel. JavaScript &lt;em&gt;finally&lt;&#x2F;em&gt; got the thing everyone had been asking
+for.&lt;&#x2F;p&gt;
+&lt;p&gt;So why didn’t more people notice?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-land-of-make-believe&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-land-of-make-believe&quot; aria-label=&quot;Anchor link for: the-land-of-make-believe&quot;&gt;🔗&lt;&#x2F;a&gt;the land of make-believe&lt;&#x2F;h2&gt;
+&lt;p&gt;In preparing &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Sn2e62CZ41g&quot;&gt;for a talk I gave&lt;&#x2F;a&gt; last year, I realized just how much JS has changed over
+the last decade. Node.js was released in 2010 with the CommonJS module system, and as a result, npm.
+That’s over 10 years of CommonJS we’ve been writing, and we’re not slowing down there (if this is
+all mumbo-jumbo to you, hopefully &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Sn2e62CZ41g&quot;&gt;my talk&lt;&#x2F;a&gt; will help).&lt;&#x2F;p&gt;
+&lt;p&gt;In the land of Node, we got Gulp, Grunt, Babel, webpack, Browserify, and Rollup. These are all tools
+that fundamentally changed how we wrote JS. And they all, in their own unique ways, compensated for
+JS’ lack of a module system. Gulp and Grunt gave you more tools to invent your own bundle, whereas
+Browserify and webpack embraced the idea of a JS module system by completely simulating it, and
+abstracting it away from you. Babel made everything possible.&lt;&#x2F;p&gt;
+&lt;p&gt;But the point is: all of these tools over the past 10 years created a land of make-believe that JS
+itself (or browsers) didn’t support. This wasn’t a bad thing, as it let us code more, faster, and we
+got to stress-test the future before actually arriving—all good things.&lt;&#x2F;p&gt;
+&lt;p&gt;But now we don’t need it anymore, and it’s hard to change everything and start over again. And
+perhaps that fear of starting over—again—has kept us from recognizing the exciting new future. Yet
+we must move forward.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-switch-to-esm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-switch-to-esm&quot; aria-label=&quot;Anchor link for: why-switch-to-esm&quot;&gt;🔗&lt;&#x2F;a&gt;why switch to ESM&lt;&#x2F;h2&gt;
+&lt;p&gt;So, why switch to ESM? What do we stand to gain by changing everything?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;universal-js&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#universal-js&quot; aria-label=&quot;Anchor link for: universal-js&quot;&gt;🔗&lt;&#x2F;a&gt;universal JS&lt;&#x2F;h3&gt;
+&lt;p&gt;The same JavaScript you write for the browser, works in the server. While that was the &lt;em&gt;promise&lt;&#x2F;em&gt; of
+Node.js, over time it’s shifted away from ECMAScript to become its own language. ESM would bring
+everything back under one roof again.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;remote-imports&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#remote-imports&quot; aria-label=&quot;Anchor link for: remote-imports&quot;&gt;🔗&lt;&#x2F;a&gt;remote imports&lt;&#x2F;h3&gt;
+&lt;p&gt;This is &lt;em&gt;huge&lt;&#x2F;em&gt;. We can import any module from anywhere on the internet, and &lt;strong&gt;are no longer bound to
+npm.&lt;&#x2F;strong&gt; Consider &lt;a href=&quot;https:&#x2F;&#x2F;deno.land&#x2F;&quot;&gt;Deno&lt;&#x2F;a&gt;, a new V8&#x2F;Rust&#x2F;Tokio runtime that might replace Node.js. This is a line
+from the &lt;a href=&quot;https:&#x2F;&#x2F;deno.land&#x2F;std&#x2F;manual.md#introduction&quot;&gt;docs&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Comparison to Node.js&lt;&#x2F;strong&gt;&lt;br&#x2F;&gt; Deno does not use &lt;code&gt;npm&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This single, understated line is a huge shift. How can you just… &lt;em&gt;move away&lt;&#x2F;em&gt; from the most popular
+package repository in history? Well thanks to ESM, you can load modules from any URL, whether that
+be locally, or a CDN. &lt;code&gt;npm install&lt;&#x2F;code&gt; is now no longer needed; the language itself supports
+cross-domain modules!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;no-bundling-or-transpilation-needed&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#no-bundling-or-transpilation-needed&quot; aria-label=&quot;Anchor link for: no-bundling-or-transpilation-needed&quot;&gt;🔗&lt;&#x2F;a&gt;no bundling or transpilation needed&lt;&#x2F;h3&gt;
+&lt;p&gt;Imagine a world where you don’t need to run any CLI command whatsoever to start a front-end
+application. No runtime, webpack, build times… &lt;em&gt;nothing&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To learn more about this, check out &lt;em&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dev.to&#x2F;pika&#x2F;a-future-without-webpack-ago&quot;&gt;A future without webpack&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;near-perfect-caching&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#near-perfect-caching&quot; aria-label=&quot;Anchor link for: near-perfect-caching&quot;&gt;🔗&lt;&#x2F;a&gt;near-perfect caching&lt;&#x2F;h3&gt;
+&lt;p&gt;In the webpack world before ESM, you had to make trade-offs: rolling everything into one giant
+bundle meant no load times after initializing, but that initial download is brutal. Conversely,
+“code splitting” into tiny chunks made each chunk easily-downloadable but code is almost certainly
+duplicated across those chunks and a user will be paying for the same weight over and over again (🤔
+not entirely unlike buying a home with cash or paying it off over 30 years, now that I think about
+it).&lt;&#x2F;p&gt;
+&lt;p&gt;With ESM, the entire dependency tree is exposed to the browser, so the browser can perfectly cache
+what it needs, and nothing more (imagine if you paid nothing on your home to start, zero interest
+ever, and you only paid for the parts of the home you used, as you used them). Of course, &lt;em&gt;cache
+invalidation&lt;&#x2F;em&gt; is a separate problem that will be with us until the end of time. But that aside, ESM
+truly is the perfect caching story for JS.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;making-the-switch&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#making-the-switch&quot; aria-label=&quot;Anchor link for: making-the-switch&quot;&gt;🔗&lt;&#x2F;a&gt;making the switch&lt;&#x2F;h2&gt;
+&lt;p&gt;So let’s say you’re sold on ESM… how do you make the leap? Well, it may be your tools that are to
+blame:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;React:&lt;&#x2F;strong&gt; doesn’t ship an ESM-ready package (as of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;facebook&#x2F;react&#x2F;issues&#x2F;11503&quot;&gt;Mar 2020&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;npm:&lt;&#x2F;strong&gt; &lt;code&gt;&amp;lt; 8%&lt;&#x2F;code&gt; of npm packages &lt;a href=&quot;https:&#x2F;&#x2F;www.pika.dev&#x2F;about&#x2F;stats&quot;&gt;ship ESM&lt;&#x2F;a&gt; (as of &lt;a href=&quot;https:&#x2F;&#x2F;www.pika.dev&#x2F;about&#x2F;stats&quot;&gt;Oct 2019&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Node.js:&lt;&#x2F;strong&gt; though it supports ESM, it’s not in a stable LTS release yet (as of &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@nodejs&#x2F;announcing-core-node-js-support-for-ecmascript-modules-c5d6dc29b663&quot;&gt;Nov
+2019&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;webpack&lt;&#x2F;strong&gt;: can’t ship your code as ESM, nor can it take advantage of ESM features like remote
+imports.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;By choosing these tools even in new projects, you’re shipping legacy code that already has a limited
+lifespan. But some of that isn’t within your control, sure—maybe your company, or client demands
+these. Or you just can’t accomplish what you need to with alternatives; that’s understandable.&lt;&#x2F;p&gt;
+&lt;p&gt;But there are also some new, exciting projects on the horizon that are shaping up to replace
+now-legacy CommonJS tools:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;snowpack&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#snowpack&quot; aria-label=&quot;Anchor link for: snowpack&quot;&gt;🔗&lt;&#x2F;a&gt;Snowpack&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.snowpack.dev&#x2F;&quot;&gt;Snowpack&lt;&#x2F;a&gt; (a play on ”no pack”) is an install tool (disclosure: that I’m one of the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pikapkg&#x2F;snowpack&#x2F;graphs&#x2F;contributors&quot;&gt;lead
+contributers for&lt;&#x2F;a&gt;) that lets you ship ESM-ready code straight to the browser
+&lt;strong&gt;and&lt;&#x2F;strong&gt; use npm. You can &lt;code&gt;npm install&lt;&#x2F;code&gt; like normal, and lets you use Preact, Vue, Svelte, and more
+but with &lt;strong&gt;zero build time&lt;&#x2F;strong&gt; and &lt;strong&gt;no configuration.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.snowpack.dev&#x2F;&quot;&gt;snowpack.dev&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;pika-cdn&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#pika-cdn&quot; aria-label=&quot;Anchor link for: pika-cdn&quot;&gt;🔗&lt;&#x2F;a&gt;Pika CDN&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.pika.dev&#x2F;registry&quot;&gt;Pika Registry&lt;&#x2F;a&gt; does all the work of finding ESM-ready packages for you. Search for
+any keyword like you would on npm, except Pika Registry can tell you instantly whether or not that
+package supports ESM.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.pika.dev&#x2F;registry&quot;&gt;pika.dev&#x2F;registry&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;deno&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#deno&quot; aria-label=&quot;Anchor link for: deno&quot;&gt;🔗&lt;&#x2F;a&gt;Deno&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;deno.land&#x2F;&quot;&gt;Deno&lt;&#x2F;a&gt; is a new competitor to Node.js, built with V8, Rust, and Tokio and features native
+TypeScript and ESM support out-of-the-box. Its guiding principle is to more closely mirror
+ECMAScript in the areas where Node departed, principally only allowing ESM rather than CommonJS.
+Though the project is in beta, it’s already gathering community attention and shows tons of promise.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;deno.land&#x2F;&quot;&gt;deno.land&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To recap, the current state of ESM in 2020 is: &lt;strong&gt;it’s ready to use everywhere,&lt;&#x2F;strong&gt; but &lt;strong&gt;it’s up to
+you to opt-in!&lt;&#x2F;strong&gt; Give some of the new ESM tools a try, and you might find yourself dealing with less
+tooling, less configuration, and other great benefits while helping the community at large unify
+around ESM.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>the great(er) divide in front-end</title>
+		<published>2020-02-17T00:00:00+00:00</published>
+		<updated>2020-04-19T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/3-pillars-of-front-end-knowledge/" type="text/html"/>
+		<id>https://pow.rs/blog/3-pillars-of-front-end-knowledge/</id>
+		<content type="html">&lt;p&gt;It’s been about a year since Chris Coyier’s post &lt;a href=&quot;https:&#x2F;&#x2F;css-tricks.com&#x2F;the-great-divide&#x2F;&quot;&gt;&lt;em&gt;The Great Divide&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; came out. The
+“divide,” of course, being between 2 armies within front-end development that had been forming:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;On one side, an army of developers whose interests, responsibilities, and skill sets are heavily
+revolved around JavaScript. On the other, an army of developers whose interests, responsibilities,
+and skill sets are focused on other areas of the front end, like HTML, CSS, design, interaction,
+patterns, accessibility, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;If you‘re unfamiliar with what he’s talking about, I’d read that post, but a quick-and-dirty history
+of front-end is that it’s a profession that was once a league of ex-designers muddling their way
+through code, that’s recently transformed into a proper programming discipline (with some design
+skills remaining a part of the job requirement). Chris’ post is somewhat of a flag post marking that
+slow, subtle shift that had been happening in the profession for years.&lt;&#x2F;p&gt;
+&lt;p&gt;My initial reaction to this was to reject it—not that the divide wasn‘t happening, but the idea that
+these should be 2 different professions. To be blunt, I saw it as someone who made their career on
+CSS attacking the good work that JavaScript folks had been doing because it threatened his career (I
+say that as someone respects Chris immensely, but people are allowed to be wrong in blog posts). I
+even wrote an earlier draft of this post arguing that there’s no divide; that’s just how front-end
+&lt;em&gt;is&lt;&#x2F;em&gt; now. Get used to it. &lt;em&gt;Git gud&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I now don’t see it that way, and I think Chris (rightly) was just pointing out a concern that he had
+about this divide forming.&lt;&#x2F;p&gt;
+&lt;p&gt;As a result, I began to recognize my own limitations. I saw myself as someone that was good at both
+CSS and JS. But if I’m being honest, I’m not &lt;em&gt;that&lt;&#x2F;em&gt; good at CSS; I just am good &lt;em&gt;enough&lt;&#x2F;em&gt; at design
+where it seems like I am. I’m also not &lt;em&gt;that&lt;&#x2F;em&gt; good at JS, as someone without a Computer Science
+background, I am not the master architect that well-educated CS students tend to be (to be clear—I’m
+strongly in the “you don’t need a degree to be a dev” camp as a member myself, but there is
+nonetheless a value in a CS education that I do not possess).&lt;&#x2F;p&gt;
+&lt;p&gt;In short, the past couple months have been me coming to terms with not being able to do it all. And
+do it all well.&lt;&#x2F;p&gt;
+&lt;p&gt;But all that musing aside, the core content of this blog post hasn’t changed, because it was drafted
+from notes I wrote to a coworker wanting to learn more about front-end, and as I was ennumerating
+all there is to learn today I noticed the knowledge started to pool into 3 rough areas of expertise,
+which I still stand by. &lt;em&gt;Will these become 3 different jobs eventually?&lt;&#x2F;em&gt; I don’t know. The older I
+get the less I’m sure of. But I do know that each of these groups are substantial learning efforts
+each their own, and I do now think it’s impossible to master all three of them.&lt;&#x2F;p&gt;
+&lt;p&gt;Treat this like a DnD skill tree or something—up to you to spread points evenly or be a glass cannon
+in one.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;snowdart-i-browser-apis-rendering-html-css&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#snowdart-i-browser-apis-rendering-html-css&quot; aria-label=&quot;Anchor link for: snowdart-i-browser-apis-rendering-html-css&quot;&gt;🔗&lt;&#x2F;a&gt;👨‍🎨 I. Browser APIs &amp;amp; Rendering (HTML&#x2F;CSS)&lt;&#x2F;h2&gt;
+&lt;p&gt;The area of expertise of Browser APIs &amp;amp; Rendering revolves around two central questions: &lt;strong&gt;On the
+web, how do I make things look like things?&lt;&#x2F;strong&gt; and &lt;strong&gt;How does a browser work to help me accomplish
+this?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;At beginner levels, browser rendering involves understanding the fundamentals of HTML &amp;amp; CSS to get
+code to look like a design. At intermediate levels, this gets into animations, render profiling, and
+making interactive things perform adequately in a browser environment. At the highest levels,
+mastery of browser rendering means being able to describe in great detail how assets are requested
+and the priority of their loading, the browser paint API, and how to render anything—even 3D—at 60
+frames per second (the &lt;a href=&quot;https:&#x2F;&#x2F;dassur.ma&#x2F;things&#x2F;120fps&#x2F;&quot;&gt;maximum a browser will allow&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;For the traditional CS student, the browser is something that often gets underestimated. This
+results in the common “I don’t understand CSS” state of confusion that so many backend developers
+find themselves in. And it &lt;em&gt;is&lt;&#x2F;em&gt; confusing, until you treat the browser as the special, weird runtime
+environment that it is. Often times it’s what you’re fighting with here—your own misconceptions of
+what the browser is doing.&lt;&#x2F;p&gt;
+&lt;p&gt;Take the following with a grain of salt, but here is roughly how you might track growth of your
+knowledge in this area:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;beginner&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#beginner&quot; aria-label=&quot;Anchor link for: beginner&quot;&gt;🔗&lt;&#x2F;a&gt;Beginner&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Fundamentals of HTML&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand what different HTML tags do&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Fundamentals of CSS&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand how to use &amp;amp; apply CSS to HTML to style pages&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Fundamentals of Browser Resources&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand where to put CSS &amp;amp; JS files and reference them in the HTML for them to show up&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;intermediate&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#intermediate&quot; aria-label=&quot;Anchor link for: intermediate&quot;&gt;🔗&lt;&#x2F;a&gt;Intermediate&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Accessibility&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can ensure sites are usable for people that use screen readers and other assistive technologies&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Animations&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can animate objects using either &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;CSS&#x2F;CSS_Animations&#x2F;Using_CSS_animations&quot;&gt;CSS&lt;&#x2F;a&gt; or a JavaScript framework like &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mrdoob&#x2F;three.js&#x2F;&quot;&gt;Three.js&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Hardware acceleration&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand certain properties &amp;amp; animations can &lt;a href=&quot;https:&#x2F;&#x2F;www.smashingmagazine.com&#x2F;2016&#x2F;12&#x2F;gpu-animation-doing-it-right&#x2F;&quot;&gt;use the GPU&lt;&#x2F;a&gt; for performance&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Render profiling²&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can use tools like &lt;a href=&quot;https:&#x2F;&#x2F;pow.rs&#x2F;blog&#x2F;3-pillars-of-front-end-knowledge&#x2F;lighthouse&quot;&gt;Lighthouse&lt;&#x2F;a&gt; to understand what is slowing down browser rendering &amp;amp; performance&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Image formats&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand when to use each image format (&lt;code&gt;JPG&lt;&#x2F;code&gt;, &lt;code&gt;PNG&lt;&#x2F;code&gt;, &lt;code&gt;WebP&lt;&#x2F;code&gt;, …), and how to &lt;a href=&quot;http:&#x2F;&#x2F;imageoptim.com&#x2F;&quot;&gt;optimize them&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Common Browser API knowledge&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand common &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&quot;&gt;browser APIs&lt;&#x2F;a&gt; like &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;Fetch_API&quot;&gt;&lt;code&gt;fetch&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;History_API&quot;&gt;&lt;code&gt;history&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;, and know when to leverage the browser and when to write my own JavaScript&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;master&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#master&quot; aria-label=&quot;Anchor link for: master&quot;&gt;🔗&lt;&#x2F;a&gt;Master&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Resource prioritization² ³&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand &lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;web&#x2F;fundamentals&#x2F;performance&#x2F;resource-prioritization&quot;&gt;resource prioritization&lt;&#x2F;a&gt; and the steps from streaming initial HTML payload, to fetching the resources, to rendering them in priority order&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Render debugging²&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand how the browser performs &lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;web&#x2F;fundamentals&#x2F;performance&#x2F;rendering&#x2F;simplify-paint-complexity-and-reduce-paint-areas&quot;&gt;paint operations&lt;&#x2F;a&gt; and how to optimize them&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Comprehensive Browser API Knowledge²&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand more invisible APIs like &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;WebGL_API&quot;&gt;WebGL&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Painting_API&quot;&gt;Paint&lt;&#x2F;a&gt;, and the &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;Document_Object_Model&quot;&gt;DOM&lt;&#x2F;a&gt; and understand how they differ or can work in sync to render parts of a page&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Browser processes&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand the &lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;web&#x2F;updates&#x2F;2018&#x2F;09&#x2F;inside-browser-part2&quot;&gt;Browser, Renderer, and GPU processes&lt;&#x2F;a&gt; that lie underneath the higher-level APIs&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;&lt;em&gt;² related to II &#x2F; ³ related to II&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You may find that much of the “CSS Dev” from the &lt;em&gt;Great Divide&lt;&#x2F;em&gt; post fits in here, with the addition
+of JavaScript like &lt;code&gt;fetch&lt;&#x2F;code&gt; and &lt;code&gt;history&lt;&#x2F;code&gt;, and the omission of CSS frameworks like &lt;a href=&quot;http:&#x2F;&#x2F;smacss.com&#x2F;&quot;&gt;SMACSS&lt;&#x2F;a&gt;.
+So already we’re breaking up that division! As for CSS framework knowledge, that fits more neatly
+in…&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ok-wommicroscope-ii-js-programming-architecture&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ok-wommicroscope-ii-js-programming-architecture&quot; aria-label=&quot;Anchor link for: ok-wommicroscope-ii-js-programming-architecture&quot;&gt;🔗&lt;&#x2F;a&gt;👩‍🔬 II. JS Programming &amp;amp; Architecture&lt;&#x2F;h2&gt;
+&lt;p&gt;The knowledge of JavaScript &amp;amp; Architecture is the recent development of front-end into a more
+formal, proper software environment from web dev’s &lt;em&gt;laissez-faire&lt;&#x2F;em&gt; “just throw that code anywhere”
+beginnings. This roughly correlates with the JavaScript-oriented type in Chris’ post somewhat, and
+is closer to the comfort sphere of a traditional Computer Science education. Whereas Camp 1 trends
+toward static display, Camp 2 adds dynamism, automation, and interaction. You could even call this
+“the backend of front-end.”&lt;&#x2F;p&gt;
+&lt;p&gt;This area of knowledge is concerned with &lt;strong&gt;How should this application be interacted with?&lt;&#x2F;strong&gt; and
+&lt;strong&gt;How should code for the front-end be organized for delivery and team maintainability?&lt;&#x2F;strong&gt; The
+pursuit of these 2 questions, together, have led to many milestones such as that React thing you’ve
+heard so much about (along with Node.js, which we’ll cover more in the last section).&lt;&#x2F;p&gt;
+&lt;p&gt;Though JavaScript is one of the most popular programming ecosystems, it’s still developing. And for
+that reason I don’t feel comfortable dividing intermediate- and master-level topics. Everyone’s
+journey through here will differ, and for that reason, I only distinguish between basics and
+non-basics.&lt;&#x2F;p&gt;
+&lt;p&gt;In your rebuttal of this blog post, please be gentle with this section ;)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;beginner-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#beginner-1&quot; aria-label=&quot;Anchor link for: beginner-1&quot;&gt;🔗&lt;&#x2F;a&gt;Beginner&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Fundamentals of JavaScript&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can build basic things with vanilla JS and don’t always need a library (only sometimes)&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;JavaScript quirks&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand the basics of &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Guide&#x2F;Working_with_Objects&quot;&gt;working with objects&lt;&#x2F;a&gt; in JS, the basics of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getify&#x2F;You-Dont-Know-JS&#x2F;blob&#x2F;2nd-ed&#x2F;objects-classes&#x2F;ch1.md&quot;&gt;&lt;code&gt;this&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;, and a rough understanding of scopes&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Async knowledge&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand the basics of &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Reference&#x2F;Global_Objects&#x2F;Promise&quot;&gt;&lt;code&gt;Promise()&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; and can write code to fetch remote data (AJAX) or deal with async operations&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Fundamentals of Frameworks³&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand how to spin up a React &#x2F; Vue &#x2F; Svelte &#x2F; whatever project and get something visible&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Fundamentals of CSS organization¹&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I have some basic strategies to organize styles, whether that’s a methodology like &lt;a href=&quot;http:&#x2F;&#x2F;smacss.com&#x2F;&quot;&gt;SMACSS&lt;&#x2F;a&gt; or a utility like &lt;a href=&quot;https:&#x2F;&#x2F;tailwindcss.com&quot;&gt;Tailwind&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;intermediate-master&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#intermediate-master&quot; aria-label=&quot;Anchor link for: intermediate-master&quot;&gt;🔗&lt;&#x2F;a&gt;Intermediate&#x2F;Master&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Comprehensive JS knowledge³&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can solve any common problem in JS (when sensible), and I possess up-to-date knowledge of the latest &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Archive&#x2F;Web&#x2F;JavaScript&#x2F;ECMAScript_Next_support_in_Mozilla&quot;&gt;ECMAScript 20xx&lt;&#x2F;a&gt; features&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Front-end philosophy&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I have cursory-to-advanced knowledge of how strategies like &lt;a href=&quot;https:&#x2F;&#x2F;xstate.js.org&#x2F;&quot;&gt;State Machines&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;www.learnrxjs.io&#x2F;&quot;&gt;Observables&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;docs&#x2F;design-principles.html&quot;&gt;Component-based architecture&lt;&#x2F;a&gt;, etc. solve different problems for building web applications&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Performance profiling&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand how to profile JavaScript’s performance, even moving operations &lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;web&#x2F;fundamentals&#x2F;performance&#x2F;rendering&#x2F;optimize-javascript-execution&quot;&gt;off the main thread&lt;&#x2F;a&gt; where needed&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Inheritance and prototypes&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;Beyond data types, I understand JavaScript’s &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Inheritance_and_the_prototype_chain&quot;&gt;prototypal inheritance&lt;&#x2F;a&gt; design&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Type System&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand JavaScript’s type system and &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;Type_coercion&quot;&gt;coercion&lt;&#x2F;a&gt;, and know how best to leverage it (and potentially possess TypeScript knowledge)&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Testing&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I ensure all JavaScript is tested, whether with &lt;a href=&quot;https:&#x2F;&#x2F;jestjs.io&#x2F;&quot;&gt;unit &#x2F; E2E&lt;&#x2F;a&gt; tests, &lt;a href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;web&#x2F;tools&#x2F;puppeteer&#x2F;&quot;&gt;headless browser tests&lt;&#x2F;a&gt;, or &lt;a href=&quot;https:&#x2F;&#x2F;happo.io&#x2F;&quot;&gt;VRT&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Advanced network knowledge¹&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I have comprehensive strategies for consuming API data and feel comfortable using client like &lt;a href=&quot;https:&#x2F;&#x2F;www.apollographql.com&#x2F;&quot;&gt;Apollo&lt;&#x2F;a&gt; or rolling my own.&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;DOM manipulation¹&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand JavaScript’s role in DOM manipulation, and strategies for managing this such as &lt;a href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;docs&#x2F;design-principles.html&quot;&gt;React&lt;&#x2F;a&gt; (related to Camp 1)&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;WebAssembly&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand how JavaScript interops with &lt;a href=&quot;https:&#x2F;&#x2F;webassembly.org&#x2F;&quot;&gt;WebAssembly&lt;&#x2F;a&gt; and know when to leverage it&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;&lt;em&gt;¹ related to I &#x2F; ³ related to III&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In JavaScript’s strange, strange development, something very weird happened that few could have
+predicted: &lt;em&gt;JavaScript turned into a backend language with Node.js.&lt;&#x2F;em&gt; This not only changed how we
+&lt;em&gt;prepared&lt;&#x2F;em&gt; JavaScript for the browser (Camp 1); it also changed how we wrote it (Camp 2).&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s be clear: &lt;em&gt;Node.js is a backend language.&lt;&#x2F;em&gt; In this post we’re not talking about the backend,
+but we can’t deny that Node.js has changed the front-end ecosystem forever with advanced tooling to
+npm. And this knowledge makes up the final area.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;construction-worker-iii-the-toolchain-node-js-npm-babel-bundlers&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#construction-worker-iii-the-toolchain-node-js-npm-babel-bundlers&quot; aria-label=&quot;Anchor link for: construction-worker-iii-the-toolchain-node-js-npm-babel-bundlers&quot;&gt;🔗&lt;&#x2F;a&gt;👷‍♀️ III: The Toolchain (Node.js, npm, Babel, bundlers)&lt;&#x2F;h2&gt;
+&lt;p&gt;The final area of expertise is one you won’t see outlined often, if at all, as separate from JS
+(II). It likely got lumped in with the “JS devs” in &lt;em&gt;The Great Divide&lt;&#x2F;em&gt; post. Though it seems like a
+part of JS, the toolchain is more “meta”, and its concern more aligns with: &lt;strong&gt;Can the way we develop
+web applications be improved?&lt;&#x2F;strong&gt; and it’s given rise to &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Guide&#x2F;Modules&quot;&gt;module systems&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;www.npmjs.com&#x2F;&quot;&gt;package
+managers&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;babeljs.io&#x2F;&quot;&gt;transpilers&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Guide&#x2F;Modules&quot;&gt;bundlers&lt;&#x2F;a&gt;, and even &lt;a href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;docs&#x2F;introducing-jsx.html&quot;&gt;new languages&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So while web dev today is largely JS, thus explaining the confusion between II and III, perhaps it
+won’t be for long with things like &lt;a href=&quot;https:&#x2F;&#x2F;webassembly.org&#x2F;&quot;&gt;WebAssembly&lt;&#x2F;a&gt; on the rise. And you can contribute to the
+toolchain without being a JS dev whatsoever (for example, though Babel is central to JS dev these
+days, Babel plugins themselves apply generic principles of &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Abstract_syntax_tree&quot;&gt;AST&lt;&#x2F;a&gt;s that apply to any language,
+and nothing about it is uniquely JS other than the syntax used to write it).&lt;&#x2F;p&gt;
+&lt;p&gt;This area of knowledge is also hard to outline because by its nature it questions the ontology of
+front-end development. But it’s also the most powerful because it has the ability to transform how
+we work. And as it also requires at least an intermediate understanding of &lt;em&gt;some&lt;&#x2F;em&gt; programming
+language (even if not JS), the “Beginner” section was omitted entirely here.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;intermediate-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#intermediate-1&quot; aria-label=&quot;Anchor link for: intermediate-1&quot;&gt;🔗&lt;&#x2F;a&gt;Intermediate&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Configuration&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can configure a local development without a boilerplate, working directly with tools like Gulp, webpack, and Parcel&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Transpilation¹&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can configure Babel and PostCSS to transpile code for specific targets&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Bundling &amp;amp; optimization²&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can set up build pipelines to ship production-ready code and optimize delivery of those bundles&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Advanced npm&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I’ve deployed my own packages to npm&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;master-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#master-1&quot; aria-label=&quot;Anchor link for: master-1&quot;&gt;🔗&lt;&#x2F;a&gt;Master&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;Skill&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Example&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Architect&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can build front-end boilerplates for other people to use&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;AST understanding&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can create my own &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamiebuilds&#x2F;babel-handbook&#x2F;blob&#x2F;master&#x2F;translations&#x2F;en&#x2F;plugin-handbook.md&quot;&gt;Babel&lt;&#x2F;a&gt; or ESLint plugins&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Bundler understanding&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can create my own webpack plugins&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Code Generation&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I can generate JS programatically&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;CI²&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I create automated pipelines for deploying npm packages as well as shipping optimized bundles to production&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;Ecosystem understanding&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;em&gt;I understand how to deploy npm packages for Node.js, web browsers, and CLI tools, and how to target each&lt;&#x2F;em&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;&lt;em&gt;¹ related to I &#x2F; ² related to II&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Usually when complaints arise about the state of front-end development, whether that’s how much it’s
+changed, or if it’s too complicated, usually JavaScript gets the blame when really it’s the
+toolchain. Of course, this is confusing, since JavaScript is both the engine that runs the toolchain
+(Node.js) and the input&#x2F;output of the toolchain itself (browser JS).&lt;&#x2F;p&gt;
+&lt;p&gt;This is also the area of expertise that’s undergone the biggest changes of front-end development,
+and it won’t be settling any time soon. Still, now’s the perfect time to jump in and contribute
+&lt;em&gt;because&lt;&#x2F;em&gt; all these things aren’t settled yet.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-final-note-on-mastery&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#a-final-note-on-mastery&quot; aria-label=&quot;Anchor link for: a-final-note-on-mastery&quot;&gt;🔗&lt;&#x2F;a&gt;A final note on mastery&lt;&#x2F;h2&gt;
+&lt;p&gt;Recently, a coworker used the term “Platypus” to refer to an engineering problem which is difficult
+to classify (obviously based off an animal that lays eggs, is aquatic, has fur, and poison), and I
+love that. He didn’t remember the origin (and I Googling it only gave me the results you might
+expect), so I apologize for not being able to source this (if you know where this originates from
+please contact me).&lt;&#x2F;p&gt;
+&lt;p&gt;In a similar vein, you probably you noticed the superscript ¹s, ²s, and ³s linking skills in one
+area to another. This is a natural failing of any taxonomic system to be perfect. While there’s
+always overlap, there’s still enough net value to drawing lines that it’s worth doing.&lt;&#x2F;p&gt;
+&lt;p&gt;Mastery of any of these areas is a slippery thing, too. I’m reminded of Matt Might’s post, &lt;a href=&quot;http:&#x2F;&#x2F;matt.might.net&#x2F;articles&#x2F;phd-school-in-pictures&#x2F;&quot;&gt;&lt;em&gt;The
+illustrated guide to a Ph.D.&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; To merely reach the limits of human knowledge is not enough;
+we’re all pushing to try and make that little “dent” in the shape of what’s possible. And with that
+act, we leave behind a bigger world to explore for the next generation.&lt;&#x2F;p&gt;
+&lt;p&gt;Even theoretically if you could master something, it would only last for a short time until someone
+came along and changed what’s possible with their dent. And I can’t say this enough: &lt;strong&gt;the internet
+is a fledgeling industry&lt;&#x2F;strong&gt;. We’re still figuring everything out.&lt;&#x2F;p&gt;
+&lt;p&gt;Above all else, &lt;strong&gt;be kind to yourself,&lt;&#x2F;strong&gt; and pursue mastery only to the extent it’s rewarding for
+you and others around you. And if you do write an “us vs them” post, write it with the intent of
+unifying, not dividing. God knows we have too much division going on as it is.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>media queries are (still) a hack</title>
+		<published>2020-01-18T00:00:00+00:00</published>
+		<updated>2020-01-18T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/media-queries-are-still-a-hack/" type="text/html"/>
+		<id>https://pow.rs/blog/media-queries-are-still-a-hack/</id>
+		<content type="html">&lt;p&gt;After 15 years of working with CSS, media queries still don’t do enough for me to create responsive
+designs. To express my frustrations, I had written about half of a blog post under the title &lt;em&gt;Media
+Queries are a Hack&lt;&#x2F;em&gt; before I discovered &lt;a href=&quot;https:&#x2F;&#x2F;ianstormtaylor.com&#x2F;media-queries-are-a-hack&#x2F;&quot;&gt;that title had been taken&lt;&#x2F;a&gt;. In &lt;strong&gt;2013&lt;&#x2F;strong&gt;. Clearly I’m
+not as original as I think I am.&lt;&#x2F;p&gt;
+&lt;p&gt;Ian Storm Taylor, the author of that post, summarizes the major failing of media queries:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want &lt;strong&gt;write-once, use-anywhere&lt;&#x2F;strong&gt;—that’s what modular code is.&lt;&#x2F;p&gt;
+&lt;p&gt;Media queries are not that. They’re &lt;strong&gt;write-everywhere&lt;&#x2F;strong&gt;. They’re relative to your screen, so
+every time you write a media query for max-width or min-width, you’re connecting the appearance of
+your module to the width of the entire canvas—exactly what you were trying to avoid.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This has only become more true and more of a problem in our React-influenced,
+&lt;em&gt;everything-is-modular&lt;&#x2F;em&gt; landscape of contemporary web design. And this lack of component-oriented
+thinking lead Ian to pine for what we all do—Container Queries.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;container-queries&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#container-queries&quot; aria-label=&quot;Anchor link for: container-queries&quot;&gt;🔗&lt;&#x2F;a&gt;container queries?&lt;&#x2F;h2&gt;
+&lt;p&gt;If, for example, I have a user card component that I want to rearrange when there’s not enough room,
+I can only do that based on the browser width, &lt;strong&gt;not the component width itself.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;&#x2F;assets&#x2F;posts&#x2F;media-queries-are-still-a-hack&#x2F;user-cards.svg&quot; alt=&quot;A horizontally-laid out user card next to a vertical one&quot; &#x2F;&gt;
+  &lt;figcaption&gt;What if I wanted to stack a card vertically not based on screen width, but based on whether or not the text and image will fit side-by-side? In 2020, I still can’t.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Container Queries seem to check off all the boxes:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ Modular and composable&lt;&#x2F;li&gt;
+&lt;li&gt;✅ Attack the root problem of responsive design: resizing based on &lt;strong&gt;content&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;✅ CSS-based&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But perfect as they may be, Container Queries are not happening anytime soon. In Zach Leatherman’s
+recent article &lt;a href=&quot;https:&#x2F;&#x2F;www.zachleat.com&#x2F;web&#x2F;origin-container-queries&#x2F;&quot;&gt;&lt;em&gt;The Origin Story of Container Queries&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;, after much research, he even admits
+the grim reality of our beloved Container Queries:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[Container Queries] become almost cliché to mention it when talking about problems we’d like the
+web platform to solve… Everyone wants it, but it sure seems like no one is actively working on it.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;So what’s a person to do?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;css-grid-repeat-auto-fit-minmax&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-grid-repeat-auto-fit-minmax&quot; aria-label=&quot;Anchor link for: css-grid-repeat-auto-fit-minmax&quot;&gt;🔗&lt;&#x2F;a&gt;css grid repeat(auto-fit, minmax())?&lt;&#x2F;h2&gt;
+&lt;p&gt;If you’ve used CSS Grid, you may be familiar with this wonderful snippet:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;grid &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+  display: grid;
+  grid-gap: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1rem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+  grid-template-columns: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;repeat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(auto-fit, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;minmax&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;300px&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1fr&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;));
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;I was first introduced to this by &lt;a href=&quot;https:&#x2F;&#x2F;labs.jensimmons.com&#x2F;2017&#x2F;03-009.html&quot;&gt;Jen Simmons&lt;&#x2F;a&gt;’ wonderful demo. With only 3 lines of CSS, we
+have something that used to take hundreds:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Responsive without any media queries&lt;&#x2F;li&gt;
+&lt;li&gt;Gutters built-in 😍&lt;&#x2F;li&gt;
+&lt;li&gt;And last, but most importantly, &lt;strong&gt;items that resize based on their width&lt;&#x2F;strong&gt; (kinda sounds like
+Container Queries, don’t it?)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But despite being incredibly-useful, CSS Grid’s &lt;code&gt;repeat(auto-fit, minmax())&lt;&#x2F;code&gt; has 2 major drawbacks:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;🚫 It can’t be used on the component level like a Container Query could, so components can’t
+declare their own widths and breakpoints; their parents must.&lt;&#x2F;li&gt;
+&lt;li&gt;🚫 It doesn’t allow for columns of different widths. Neither can you tell items to responsively
+span multiple columns without media queries (and if we’re using media queries we’re all the way
+back to where we started).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;container-queries-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#container-queries-1&quot; aria-label=&quot;Anchor link for: container-queries-1&quot;&gt;🔗&lt;&#x2F;a&gt;container queries.&lt;&#x2F;h2&gt;
+&lt;p&gt;It’s really hard to make a better pitch than Container Queries as a solution to the problem of
+modular responsive design, after &lt;strong&gt;7 years&lt;&#x2F;strong&gt; and hundreds of great minds have all shared their
+collective vision of how this holy-grail-of-a-CSS-selector should work. There are no downsides to
+Container Queries, other than the belabored point that &lt;em&gt;they don’t exist&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So in parting, as I alluded to earlier, I will leave you, dear reader, with nary an original
+thought, instead, rehashing my favorite line from Phillip Walton’s well-referenced &lt;a href=&quot;https:&#x2F;&#x2F;philipwalton.com&#x2F;articles&#x2F;responsive-components-a-solution-to-the-container-queries-problem&#x2F;&quot;&gt;&lt;em&gt;Responsive
+Components: A Solution to the Container Queries Problem&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While I think we’d all agree a pure CSS solution is the ultimate goal, I hope we as a community
+are able prevent the perfect from becoming the enemy of the good.&lt;&#x2F;p&gt;
+&lt;p&gt;In matters like this, I like to remind myself of this quote from the &lt;a href=&quot;https:&#x2F;&#x2F;www.w3.org&#x2F;TR&#x2F;html-design-principles&#x2F;&quot;&gt;W3C’s HTML design
+principles&lt;&#x2F;a&gt;: “In case of conflict, consider users over authors over implementors over
+specifiers over theoretical purity.”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;In other words, in 2020, &lt;strong&gt;the best solution we have to media queries’ failings is JavaScript.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But not JavaScript for the sake of JavaScript; JavaScript for the sake of users.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s been 7 years since Ian Storm Taylor published &lt;em&gt;Media Queries are a Hack&lt;&#x2F;em&gt;. And unfortunately, in
+2020, they’re &lt;em&gt;still&lt;&#x2F;em&gt; a hack. And we’re still waiting on Container Queries.&lt;&#x2F;p&gt;
+&lt;p&gt;I may not have any original ideas on this subject, but at least we’re all on the same page.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;more-reading&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#more-reading&quot; aria-label=&quot;Anchor link for: more-reading&quot;&gt;🔗&lt;&#x2F;a&gt;more reading&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ianstormtaylor.com&#x2F;media-queries-are-a-hack&#x2F;&quot;&gt;Media Queries are a Hack&lt;&#x2F;a&gt; (the real one)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;philipwalton.com&#x2F;articles&#x2F;responsive-components-a-solution-to-the-container-queries-problem&#x2F;&quot;&gt;Responsive Components: A Solution to the Container Queries Problem&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;css-tricks.com&#x2F;lets-not-forget-about-container-queries&#x2F;&quot;&gt;Let’s Not Forget About Container Queries&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.zachleat.com&#x2F;web&#x2F;origin-container-queries&#x2F;&quot;&gt;The Origin Story of Container Queries&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>4 tips for setting a playfulness budget</title>
+		<published>2019-11-06T00:00:00+00:00</published>
+		<updated>2019-04-19T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/playfulness-budget/" type="text/html"/>
+		<id>https://pow.rs/blog/playfulness-budget/</id>
+		<content type="html">&lt;p&gt;All of us can recall being frustrated by a website or app, as well as inspired and entertained.
+Sometimes both happen in the same app, either at different points in the journey, or if we revisit
+in a a different state of mind. Application design walks a tightrope between utility and whimsy. An
+app must use &lt;strong&gt;usable,&lt;&#x2F;strong&gt; drawing from familiar patterns. But if &lt;em&gt;everything&lt;&#x2F;em&gt; is copy-and-pasted from
+elsewhere the experience will be forgettable. However, if &lt;em&gt;everything&lt;&#x2F;em&gt; reinvents the wheel you’ve
+created a frustrating experience that users are lost in (fine for an experiential art exhibit;
+terrible for an app). How do you find a balance?&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve always imagined this problem as having an imaginary bank or budget of “playfulness points” to
+draw from. If you don’t spend any points, the experience at best ends up flat and dull; at worst
+being a waste of users’ time. But going deep into debt trying to be &lt;em&gt;too&lt;&#x2F;em&gt; whimsical and novel (a
+tendency that both novice and ego-driven designers have) is worse as it’s practically unusable. I’ve
+tried to distill things I’ve learned over the years into 4 tips to spend that “budget” wisely.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1-spend-playfulness-points-during-slow-tasks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-spend-playfulness-points-during-slow-tasks&quot; aria-label=&quot;Anchor link for: 1-spend-playfulness-points-during-slow-tasks&quot;&gt;🔗&lt;&#x2F;a&gt;1. spend playfulness points during slow tasks&lt;&#x2F;h2&gt;
+&lt;p&gt;Every user when using your application will be in varying states of panic.&lt;&#x2F;p&gt;
+&lt;p&gt;Booking a hotel, tickets for a show, or flight? These can feel &lt;strong&gt;rushed&lt;&#x2F;strong&gt;, sometimes intentionally,
+and even feature anxiety-inducing timers, &lt;em&gt;BOOK NOW!&lt;&#x2F;em&gt; calls to action, and the impending sense that
+someone will snag this before you do (&lt;em&gt;23 people have looked at this Airbnb in the last hour&lt;&#x2F;em&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;This is &lt;strong&gt;not a good time to test the user’s patience with playfulness.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;However, based on the task, state of mind, and precise point in the process a user finds themself,
+there can be opportunities to slow down and deliver something unexpected.&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;&#x2F;assets&#x2F;posts&#x2F;playfulness-budget&#x2F;pizza-tracker.jpg&quot; alt=&quot;Domino’s Pizza Tracker&quot; &#x2F;&gt;
+  &lt;figcaption&gt;The Domino’s Pizza Tracker: probably my favorite example of a playful time-passer&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;The Domino’s Pizza Tracker is a legendary UX experience that gets everything right. It’s a fun,
+animated tool that appends &lt;em&gt;at the end of a user’s task&lt;&#x2F;em&gt;, almost like the after-credits scenes in a
+Marvel movie where it’s optional to stick around. What better way to kill a 30-minute wait for a
+pizza to arrive than stare at the pizza tracker’s wfun themes, creative animations, voice acting,
+and music?&lt;&#x2F;p&gt;
+&lt;p&gt;Now imagine what that experience would be like while you’re trying to &lt;em&gt;order&lt;&#x2F;em&gt; the pizza, with kids
+screaming and no time to spare. One experience is a lot of fun; the other, not so much. And context
+is the only difference.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2-spend-playfulness-points-during-frustrating-tasks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-spend-playfulness-points-during-frustrating-tasks&quot; aria-label=&quot;Anchor link for: 2-spend-playfulness-points-during-frustrating-tasks&quot;&gt;🔗&lt;&#x2F;a&gt;2. spend playfulness points during frustrating tasks&lt;&#x2F;h2&gt;
+&lt;figure&gt;
+  &lt;video autoplay=&quot;true&quot; controls muted loop playsinline width=&quot;1376&quot; height=&quot;600&quot;&gt;
+    &lt;source src=&quot;&#x2F;assets&#x2F;posts&#x2F;playfulness-budget&#x2F;little-known-goods-carousel.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
+  &lt;&#x2F;video&gt;
+  &lt;figcaption&gt;Little Known Goods Carousel animation&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Two pain points are the bane of my online shopping experience: image carousels and zoom views
+(usually which are baked into the same component). I find it unwieldy on particular devices—usually
+it‘s built with largely mobile or desktop in mind at the expense of the other. Further, the actions
+aren’t always clear, with hover, click, and manual zoom yielding wildly different outcomes depending
+on the site you’re on.&lt;&#x2F;p&gt;
+&lt;p&gt;For a recent &lt;a href=&quot;https:&#x2F;&#x2F;littleknowngoods.com&quot;&gt;ecommerce site I built&lt;&#x2F;a&gt;, I wanted to break the paradigm people were used to with
+carousels so they put no prior expectations on it (save for the arrow keys). Using the metaphor of a
+folding roadmap, I created a carousel that animates folding and unfolding as you click through the
+slides. For the zoom view, hover reveals a larger image, while on mobile the zoom is disabled and
+users intuitively pinch-zoom to enhance (with all positioning JS disabled so your image doesn’t fly
+off into space while pinch-zooming).&lt;&#x2F;p&gt;
+&lt;p&gt;While you can be the judge on how well I did, the intent was to deliver a component that people
+hadn’t seen before—a 3D, folded carousel—in order to not have expectations be placed upon it. And in
+injecting a bit of whimsy, hopefully it saves most visitors from a bad carousel experience by
+turning it on its head and making it playful.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3-spend-playfulness-points-on-first-impressions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-spend-playfulness-points-on-first-impressions&quot; aria-label=&quot;Anchor link for: 3-spend-playfulness-points-on-first-impressions&quot;&gt;🔗&lt;&#x2F;a&gt;3. spend playfulness points on first impressions&lt;&#x2F;h2&gt;
+&lt;figure&gt;
+  &lt;video autoplay=&quot;true&quot; controls muted loop playsinline width=&quot;1375&quot; height=&quot;600&quot;&gt;
+    &lt;source src=&quot;&#x2F;assets&#x2F;posts&#x2F;playfulness-budget&#x2F;playdate.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
+  &lt;&#x2F;video&gt;
+  &lt;figcaption&gt;A 3D, rotatable portable game console right at the top of the page? Yes, please.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;A user’s first several seconds on a site is a critical time for them. They’re orienting to the
+site—to the layout, colors, language, etc.—while also having something they want to accomplish.
+While often times this is a winding path for the user to clarify what they want while orienting
+themselves to a new interface, that first few seconds that a user suspends judgment can be just the
+right moment for playfulness.&lt;&#x2F;p&gt;
+&lt;p&gt;Greeting a user, for instance, with a fun animation on page load doesn’t disrupt their task while
+they figure out where it is they need to go.&lt;&#x2F;p&gt;
+&lt;p&gt;Granted, there are good and bad types of animation. A good animation would simply be adding motion
+to the hero graphic, where a bad animation would be hiding the top menu and animating in items
+one-by-one so the user has to wait painfully to even start their task. But assuming you executed the
+former, setting an impression for playfulness right off the bat can pay dividends later.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-spend-playfulness-points-during-successes&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-spend-playfulness-points-during-successes&quot; aria-label=&quot;Anchor link for: 4-spend-playfulness-points-during-successes&quot;&gt;🔗&lt;&#x2F;a&gt;4. spend playfulness points during successes&lt;&#x2F;h2&gt;
+&lt;p&gt;Errors are frustrating. Messages like &lt;code&gt;Oops! Something went wrong!&lt;&#x2F;code&gt; can be flippant and tone-deaf,
+especially when it resulted in data loss. Believe it or not, that was an actual error message I
+encountered that left me unable to pay a bill! &lt;em&gt;Oops!?&lt;&#x2F;em&gt; More like “Oops! I accidentally cancelled
+your horrible service!”&lt;&#x2F;p&gt;
+&lt;p&gt;In light of so many failures we encounter on the web, successes are something that should be
+celebrated! 🎉 Did a user finish sending an email? Add a fun illustration and some congratulatory
+copy on that succes page! Has a user reached a certain milestone in your app (miles walked,
+achievement reached, numbers hit)? Add a cool badge to their profile.&lt;&#x2F;p&gt;
+&lt;p&gt;Unexpected rewards may result in the most positively-perceived experiences. So let’s try and help
+the humans that use our application feel appreciated because they’re worth it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;so-how-big-is-my-playfulness-budget&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#so-how-big-is-my-playfulness-budget&quot; aria-label=&quot;Anchor link for: so-how-big-is-my-playfulness-budget&quot;&gt;🔗&lt;&#x2F;a&gt;so how big is my “playfulness budget?”&lt;&#x2F;h2&gt;
+&lt;p&gt;The natural question after reading all this is—”how much can I spend?” “How far is too far?” You
+probably saw this coming: &lt;strong&gt;it depends&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Just like our personal relationships, sometimes a loved one reaching out to talk can be a
+life-saver; other times a burden because you just really don’t have the time right now. In app
+design, “moments of delight” can either be a joy or a nightmare depending on the mindset of the
+user, the “panic level” they’re feeling, and what you’re offering them.&lt;&#x2F;p&gt;
+&lt;p&gt;When we’re dealing with people, &lt;em&gt;too much&lt;&#x2F;em&gt; efficiency can be boring and detrimental to the squishy
+humans you’re guiding. Sometimes the straightest roads can have us feeling sleepy behind the wheel a
+bit. Sometimes the little detours, the fun little dips and curves, &lt;em&gt;make&lt;&#x2F;em&gt; the journey memorable.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

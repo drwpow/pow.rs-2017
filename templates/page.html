@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="wrapper">
+    <article class="post-body" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <div class="post-animation">
+          {%- if page.slug == 'was-html-a-mistake' -%}
+            {%- include '_art-i-beams.html' -%}
+          {%- endif -%}
+          {%- if page.slug == 'the-state-of-es-modules-in-2020' -%}
+            {%- include '_art-broadcasts.html' -%}
+          {%- endif -%}
+          {%- if page.slug == '3-pillars-of-front-end-knowledge' -%}
+            {%- include '_art-3-rings.html' -%}
+          {%- endif -%}
+          {%- if page.slug == 'media-queries-are-still-a-hack' -%}
+            {%- include '_art-sliding-shoji.html' -%}
+          {%- endif -%}
+          {%- if page.slug == 'playfulness-budget' -%}
+            {%- include '_art-bouncing.html' -%}
+          {%- endif -%}
+        </div>
+        <h1 itemprop="headline">{{ page.title }}</h1>
+        <dl class="post-meta">
+          <dt class="post-meta-key">published</dt>
+          <dd class="post-meta-value">
+            <time datetime="{{ page.date }}">{{ page.date | date(format="%e %b %Y") }}</time>
+          </dd>
+          {%- if page.data.updated_date -%}
+            <dt class="post-meta-key">updated</dt>
+            <dd class="post-meta-value">
+              <time datetime="{{ page.updated }}">{{ page.updated | date(format= "%e %b %Y") }}</time>
+            </dd>
+          {%- endif -%}
+          <dt class="post-meta-key">tagged</dt>
+          <dd class="post-meta-value">
+            {%- for tag in page.taxonomies.tags -%}
+              <a class="tag tag--{{ tag }}" href="{{ config.base_url }}/tag/{{ tag }}" href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>
+            {%- endfor -%}
+          </dd>
+        </dl>
+      </header>
+      <div itemprop="articleBody">
+        {{ page.content | safe }}
+      </div>
+    </article>
+  </div>
+{% endblock content %}

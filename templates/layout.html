@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>
+      {% if page.title %}
+        {{ page.title }} // Drew Powers
+      {% else %}
+        {{ config.title }}
+      {% endif %}
+    </title>
+    <meta charset="utf-8"/>
+    <meta content="The personal site of Drew Powers" name="description"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" name="viewport"/>
+    <meta content="{{ config.description }}" name="description"/>
+    <meta content="{{ config.extra.author.name }}" name="author"/>
+    <meta content="#000" name="theme-color"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="IE=Edge" http-equiv="x-ua-compatible"/>
+    <link href="/blog/atom.xml" rel="alternate" title="RSS 2.0" type="application/rss+xml"/>
+    <link href="/drew-monogram-black.png" rel="apple-touch-icon"/>
+    <link href="/drew-monogram-black.png" rel="icon" type="image/png"/>
+    <link href="{{ get_url(path="/styles.css", cachebust=true) | safe }}" rel="stylesheet"/>
+  </head>
+  <body>
+    {% include "_header.html" %}
+    {% block content %}{% endblock content %}
+    {% include "_footer.html" %}
+  </body>
+</html>

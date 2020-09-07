@@ -1,0 +1,21 @@
+{% extends "page.html" %}
+{% block content %}
+  <h1>{{ term.name }}</h1>
+  {% for page in term.pages %}
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+      <header>
+        <h2 itemprop="name">
+          <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        </h2>
+      </header>
+      {% if page.summary %}
+        <div itemprop="summary">
+          {{ page.summary | safe }}
+          <nav class="readmore">
+            <a href="{{ page.permalink | safe }}" itemprop="url">Read More&nbsp;&raquo;</a>
+          </nav>
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+{% endblock content %}

@@ -1,0 +1,11 @@
+base_url = "https://pow.rs"
+compile_sass = true
+highlight_code = true
+build_search_index = true
+description = "the personal site of Drew Powers"
+taxonomies = [
+  {name = "tags", rss = true, feed = true},
+]
+
+[extra.author]
+name = "Drew Powers"
