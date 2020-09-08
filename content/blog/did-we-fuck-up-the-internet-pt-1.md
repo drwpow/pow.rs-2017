@@ -1,36 +1,31 @@
 +++
 title = "did we fuck up the internet? part 1"
 date = 2020-08-26
+updated = 2020-09-08
 description = "2020 has been… a year. Amdist a global pandemic, collapse of the United States, and other acts of God, several events transpired this year that has made us question the internet’s trajectory. Are we boned?"
 
 [taxonomies]
 tags = ["dev"]
 +++
 
-2020 has been… a year. I have neither the time nor energy to really describe all the extreme,
-heartbreaking, life-shattering events in 2020. So I won’t.
+“Learn the fundamentals” is a common piece of advice given to beginners when starting out. And
+usually for web pages, it’s some form of “learn HTML, CSS, and JS.” Those three will never go away,
+and will outlast any flavor-of-the-month framework (but full disclosure: I actually do tell
+beginners to learn a flavor-of-the-month framework because it’s motivating, it’s what gets them
+hired, and you can still learn the fundamentals at the same time).
 
-There are lots of “was the internet a mistake?” blog posts (“we’re monkeys that tricked rocks to
-think; we deserve what we get! ha ha”), but they’re a bit melodramatic. I’ve never written one
-(besides a mild [questioning of HTML](./was-html-a-mistake.html)). I’m pretty bad in general at
-feeding off sensationalism. I think I might even irrationally avoid it.
+But what if the fundamentals… aren’t so fundamental? What were to happen if the fundamentals
+changed?
 
-However, recent events have led me to question if our current trajectory of building the web is the
-right one, for the the first time in my 11+ year professional career of web development (though take
-that with a grain of salt—2020 has me questioning everything my life has led to so far). But by
-“direction” I don’t mean it shouldn’t exist. Yes, I believe in radical democratization of knowledge.
-Yes, I believe the internet has the capability to be a great social equalizer. Yes, I believe open
-access to knowledge is the most ethical thing I can probably do with my life. Yes, yes, yes.
+I’ve never written a “was the internet a mistake?” blog post (it’s either a cheap laugh—“we’re
+monkeys that tricked rocks to think; we deserve what we get! ha ha”—or a bit melodramatic). But I
+guess 2020 is the year I start.
 
-But, rather, I’m questioning our execution of it thusfar. Our understanding and [relationship with
-the internet has evolved][social-media] since its inception. And perhaps—just perhaps—our collective
-first stab at one of the most important transformations in human history wasn’t completely perfect
-only 20-something years in.
+## backstory: why I’m questioning the web
 
-What follows are my thoughts leading up to this questioning. Part 1 (this post) will outline what
-led up to now by highlighting some notable discussions happening in the community. The following
-parts will outline whatever harebrained solutions I think may get us out of this giant-ass digital
-pickle.
+When I say I’m questioning the fundamentals of the web, I basically mean the HTML/CSS/JS + browsers
+combo. Or at least this current version of it. Part 1 (this post) will outline what led to this. The
+following parts will try and soothsay a little.
 
 ### the Mozilla layoffs
 
@@ -57,104 +52,92 @@ with it. Either way, if Chromium is the last browser standing, it’s bad news f
 
 I guess there’s WebKit still 🤷‍♂️. Until Apple remembers they’re supposed to maintain it.
 
-### an ecosystem fracturing (further)
+### maybe JS isn’t the answer
 
 We pause there, and join the developer discussion in another part of the dev sphere, where people
-(like myself) are having existential meltdowns over what they’ve been doing their entire career.
-_[Second-guessing the modern web][second-guessing-modern-web]_ by Tom MacWright in May 2020 comes to
-mind as a post at the center of the discussion questioning whether or not our current JS-heavy
-trajectory is _evolution_ or _de-evolution_.
+(like myself) are having existential career questions. _[Second-guessing the modern
+web][second-guessing-modern-web]_ by Tom MacWright comes to mind as a post at the center of the
+discussion around whether or not our current JS-heavy trajectory is healthy.
 
-Sure, JS has always had nay-sayers. [JavaScript fatigue][js-fatigue] had been questioning this
-direction since 2015. And there have been no shortage of the “get off my lawn“ old guard complaining
-about any attempt at replacing jQuery ([link][fuchs-react]). However, MacWright’s post was a more
-considered viewpoint that hit just at the right time, finding agreement among the old guard [as well
-as the new React folk][abramov].
+JS has always had nay-sayers. [JavaScript fatigue][js-fatigue] had been questioning this direction
+since 2015. And there have been no shortage of the “get off my lawn“ old guard complaining about any
+attempt at replacing jQuery ([link][fuchs-react]). However, MacWright’s post came across as a
+concerned insider rather than an outside detractor that [even got the React folk thinking][abramov]
+(and yes, there’s a world of difference between the two).
 
-So after years in the spotlight, JS is under question again. In rough chronological order, here are
-a few notable discussions/milestones that amount to some key players in tech all rethinking their
-choices:
+I’d wager that if React is under question, the larger JS direction (React + webpack, built by
+Node.js) is under question by extension. Of course they aren’t the same thing, but nothing has come
+close to React’s popularity and staying power for the web (especially when you factor in React
+Native and other targets). If React goes, there’s no clear replacement, which means further
+splintering.
 
-- 2019: Web Components gain widespread browser support, but [devs don’t like them][wc-rh]
+In rough chronological order, here are a few notable discussions/milestones that amount to some key
+players in tech all rethinking reliance in JS:
+
+- 2019: Web Components gain widespread browser support, and are basically standardized React
+  components, but [devs don’t like them][wc-rh]
 - 2019–2020: websites are over 2MB and [getting bigger][page-weight] thanks to more JS
 - Apr 2020: a [pretty damning study of JS frameworks][cost-of-js] comes out
 - May 2020: Tom Wright’s [Second-guessing the modern web][second-guessing-modern-web] post
-- 2020: A new (JS-free) static site generator, [Eleventy, grows in popularity][eleventy]
 
-Back in 2015, React + webpack were our saviors, solving all our problems and paving the way to a
-bright future of the web. Sure, there were questions, but we all figured the kinks would be hammered
-out in due time.
+### our tools are (still) fractured
 
-Now, at almost 6 years in, the luster has faded. We know that many of our questions (_how can I view
-this page if there’s a single JS error?_) will never be answered. It’s not that React let us down;
-on the contrary, React was a prolific achievement. But the internet, [vast and complex as it
-is][clean-start], demands more of its tools, and React has proven to be an imperfect solution. That
-leaves us back at no consensus what the future of building the web looks like for all cases, for all
-people.
+From time to time we all need to step outside our bubbles (JS, Rails, PHP, etc.) and be reminded
+that the web development community is (still) fractured. HTML, CSS, and JS are inadequate in their
+current form, so we turn to ellaborate tools to fill in their shortcomings.
 
-Sure, there are, and will continue to be, new experiments that pose new ideas (like recently
-[Svelte][svelte]). But as of the time of this post, React has been the closest thing to a unifier
-since jQuery, and signs point to it being on the decline, with no clear replacement.
+We can’t simply write HTML, so we turn to template languages: _Nunjucks_, _Jinja_, _Handlebars_,
+_Pug_, and _Liquid_, to name only a few (there are dozens and dozens I missed). But to compile these
+non-standard templates, we need a compiler that’s likely built in Ruby, Node.js, Go, Python, or
+Rust, depending on our choices (and the language used has sweeping consequences).
 
-### no true path forward
+Or perhaps you need to generate markup dynamically, in which case you’ll need a server. Again you’ll
+have to pick a language (Ruby, Node.js, Go, PHP, Python, or Rust) as well as a framework (Rails,
+Nest.js, Django, Laravel, Rocket, etc.). Your choice here will have further sweeping consequences.
 
-So we’re at a bit of a jam: both [questioning our browser-centric standards process][clean-start],
-and [questioning our tools][second-guessing-modern-web], what _are_ we to do? (…No, seriously, what
-are we to do? That was a real question. Help me out a little.)
+And then there’s writing JS, which may or may not get types (TypeScript), and which will likely be
+built in a framework (Svelte, React, Vue, Angular, etc.). All of these choices will require setting
+up tooling (webpack / Rollup / Snowpack), as well as the connection to the server from your earlier
+choices.
 
-In planning out this post, I was going to highlight an even more fractured ecosystem with the above
-by reminding you, the reader, that the Java/Springboot, Laravel/PHP, Ruby/Rails, Django, and
-Elixir/Phoenix communities exist. And have been largely ignoring the Node community. I was going to
-drive that point home, but instead, I’m going to tangent into this [really interesting post from
-2005 ragging on Rails][rails-is-a-joke]:
+By now, we’ve been divided and subdivided and subdivided again by our choices. I want to be clear:
+I’m not at all advocating that we need to use one programming language for anything, or that
+different problems need different solutions. But I am wondering why, if webpages are supposed to be
+a standardized concept, there are so many splintered ways to assemble them that I fear we’re losing
+knowledge (and people) in between the gaps.
 
-> **Ruby on rails demo video (why do people buy into this shit?)**
->
-> In these respects Rails is a step in the wrong direction that will complicate our lives further, …
-> In Java I myself can produce the same sort of results in the same amount of time using J2EE even
-> without hibernate but with a decent IDE.
->
-> The syntax seemed like a simpler version of JSP with extensive use of scriptlets and no custom
-> tags, the IDE doesn’t seem to have even basic features like completion and the documentation seems
-> monolithic and dissorganized although when delving into a particular feature it seems quite
-> detailed.
+**There shouldn’t be so many ways to do one standard thing.**
 
-I don’t know why, but I found some comfort in the reminder that Rails, a mostly unifying force, was
-met with criticism when it came out (though I don’t know why I would expect any change to be
-received with open, loving arms by this community). That back in 2005, we were decrying the death of
-the internet, or our tooling, or whatever.
+## where do we go from here?
 
-I still see the situation now as far worse as it was back then, but at least I’m reminded that we’ve
-gotten by so far on complete uncertainty and done all right.
+To recap, I’m questioning current webdev practices because:
 
-If it’s not clear by now, I’m writing this to bemoan the fact that builders of the web currently are
-fractured with each community solving the same problems other communities have already solved,
-throwing work away, losing ideas and people left-and-right, and generally stressed af. And now
-there’s no end goal in sight. The “did we fuck-up” here is we’ve architected a web that’s never been
-harder to build for, and it’s only getting worse.
+- we might be back to a browser monopoly again
+- all of us hate writing HTML/CSS/JS so much we invent new ways every year to avoid it
+- React + Node.js bundlers are cool but didn’t live up to promises
+- our savior, web components, wasn’t received well (also worth mentioning it was championed by our
+  Chromium overlords so we’ll see if they ever do anything nice for us again)
 
-But rather than end on a “doom and gloom” note, we’re going to spin this uncertainty around into a
-creative exercise and use an unclear future as a blank canvas. In part 2, I’d like to shift into
-something a little more fun by outlining some possible futures. We’ll brainstorm a few backup
-plans—Plan A, Plan B, … [Plan E][plan-e], etc, A Marvelesque _multiverse_ of possibilities, if you
-will.
-
-_Part 2 coming soon!_
+All signs that cast doubt on our current direction. But even though the future is uncertain and
+there’s no clear answer to how we solve all this, we can still make some intelligent bets. So in
+part 2, we’ll do exactly that.
 
 [abramov]: https://twitter.com/dan_abramov/status/1259614150386425858?s=20
 [cc]: https://twitter.com/chriscoyier/status/1296573362223759361?s=20
 [clean-start]: https://macwright.com/2020/08/22/clean-starts-for-the-web.html
 [cost-of-js]: https://twitter.com/tkadlec/status/1252613423361376256?s=20
-[eleventy]: https://twitter.com/zachleat/status/1296817280098205699?s=20
 [fuchs-react]: https://twitter.com/search?q=%40thomasfuchs%20react&src=typed_query
 [js-fatigue]: https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4
+[laurie-voss]: https://seldo.com/posts/you-will-never-be-a-full-stack-developer
 [page-weight]: https://twitter.com/scottjehl/status/1263492890979979264?s=20
 [plan-e]: https://www.youtube.com/embed/PPEbmbWuBx4?start=8&end=25&rel=0
-[microsoft-chromium]: https://www.theverge.com/2019/5/6/18527550/microsoft-chromium-edge-google-history-collaboration
+[microsoft-chromium]:
+  https://www.theverge.com/2019/5/6/18527550/microsoft-chromium-edge-google-history-collaboration
 [microsoft-v-us]: https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp.
-[mozilla-layoffs]: https://www.theverge.com/2020/8/11/21363424/mozilla-layoffs-quarter-staff-250-people-new-revenue-focus
-[mozilla-rust]: https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html?ref=hvper.com
-[rails-is-a-joke]: https://vprise.wordpress.com/2005/12/14/ruby-on-rails-demo-video-why-do-people-buy-into-this-shit/
+[mozilla-layoffs]:
+  https://www.theverge.com/2020/8/11/21363424/mozilla-layoffs-quarter-staff-250-people-new-revenue-focus
+[mozilla-rust]:
+  https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html?ref=hvper.com
 [second-guessing-modern-web]: https://macwright.com/2020/05/10/spa-fatigue.html
 [so-survey]: https://insights.stackoverflow.com/survey/2020
 [social-media]: https://www.apa.org/members/content/social-media-research

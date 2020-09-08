@@ -26,7 +26,7 @@
           <dd class="post-meta-value">
             <time datetime="{{ page.date }}">{{ page.date | date(format="%e %b %Y") }}</time>
           </dd>
-          {%- if page.data.updated_date -%}
+          {%- if page.updated -%}
             <dt class="post-meta-key">updated</dt>
             <dd class="post-meta-value">
               <time datetime="{{ page.updated }}">{{ page.updated | date(format= "%e %b %Y") }}</time>

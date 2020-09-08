@@ -1,8 +1,9 @@
 base_url = "https://pow.rs"
+title = "drew powers"
 compile_sass = true
 highlight_code = true
 build_search_index = true
-description = "the personal site of Drew Powers"
+description = "the personal site of drew powers"
 taxonomies = [
   {name = "tags", rss = true, feed = true},
 ]
