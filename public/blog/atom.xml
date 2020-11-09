@@ -5,8 +5,213 @@
 	<link href="https://pow.rs/blog/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://pow.rs/blog/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-09-08T00:00:00+00:00</updated>
+	<updated>2020-11-09T00:00:00+00:00</updated>
 	<id>https://pow.rs/blog/atom.xml</id>
+	<entry xml:lang="en">
+		<title>4 possible futures for the internet</title>
+		<published>2020-10-17T00:00:00+00:00</published>
+		<updated>2020-11-09T00:00:00+00:00</updated>
+		<link href="https://pow.rs/blog/4-possible-futures-for-the-internet/" type="text/html"/>
+		<id>https://pow.rs/blog/4-possible-futures-for-the-internet/</id>
+		<content type="html">&lt;p&gt;I took a month from &lt;a href=&quot;&#x2F;blog&#x2F;did-we-fuck-up-the-internet-pt-1&quot;&gt;my last post&lt;&#x2F;a&gt; to reflect on what the future of the internet might be. To
+recap, the internet &lt;em&gt;is&lt;&#x2F;em&gt; in a precarious state, from but not limited to the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;it’s &lt;a href=&quot;https:&#x2F;&#x2F;www.enterprisetimes.co.uk&#x2F;2020&#x2F;08&#x2F;13&#x2F;will-mozilla-layoffs-affect-security-of-firefox-browser&#x2F;&quot;&gt;lost many of its great protectors&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;it’s &lt;a href=&quot;https:&#x2F;&#x2F;techcrunch.com&#x2F;2019&#x2F;09&#x2F;26&#x2F;voter-manipulation-on-social-media-now-a-global-problem-report-finds&#x2F;&quot;&gt;being actively exploited as the ultimate propaganda machine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;it’s &lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;05&#x2F;10&#x2F;spa-fatigue.html&quot;&gt;frustrating and burning out its maintainers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But is it unsavable? On the contrary; I still believe the internet itself can be a &lt;a href=&quot;https:&#x2F;&#x2F;www.newyorker.com&#x2F;culture&#x2F;cultural-comment&#x2F;the-second-act-of-social-media-activism&quot;&gt;powerful vehicle
+for good&lt;&#x2F;a&gt;. I can’t speak on the first 2 problems, but I can on the last topic:
+&lt;em&gt;frustrating and burning out its maintainers&lt;&#x2F;em&gt;. Because what better way to save the internet, than to
+make the barrier to entry as low as possible to allow the right people to help build it?&lt;&#x2F;p&gt;
+&lt;p&gt;So in that vein, I think the internet is long overdue for a (realistic) reimagining. Keep in mind
+what follows is complete imagination; an utter shot in the dark. Assume HTTP and the underlying
+protocols all still exist, but what if we could reinvent the fragmented HTML&#x2F;CSS&#x2F;JS mega-ecosystem
+with all the server-side languages, frameworks, preprocessors, and bells and whistles that come with
+it? And if we did, could we make lives easier? Here are 4 ideas to make web dev more maintainable:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future-1-overhaul-html&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#future-1-overhaul-html&quot; aria-label=&quot;Anchor link for: future-1-overhaul-html&quot;&gt;🔗&lt;&#x2F;a&gt;future 1: overhaul HTML&lt;&#x2F;h2&gt;
+&lt;p&gt;HTML was originally created to easily create rich documents. Problem is &lt;a href=&quot;&#x2F;blog&#x2F;was-html-a-mistake&#x2F;&quot;&gt;we’ve been building
+highly-interactive web apps for years&lt;&#x2F;a&gt;. And because of that disconnect, we have to build the
+same UI components, over, and over, and over (and over) again.&lt;&#x2F;p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;&#x2F;assets&#x2F;posts&#x2F;4-possible-futures-for-the-internet&#x2F;npm-ui-components.png&quot; alt=&quot;search for “ui component” on npm&quot; &#x2F;&gt;
+  &lt;figcaption&gt;
+    Searching for “ui component” on npm yields over 11,000 results. I can’t help but feel that too many of those were made out of necessity rather than preference.
+  &lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Although one solution to alleviate this sisyphean task would be to ditch HTML and the “document”
+idea altogether, HTML is responsible for some of the most accessible interfaces we’ve ever built.
+Screen readers and a suite of tools revolve around HTML’s design, so simply throwing it away would
+mean decades of setback for less-abled individuals.&lt;&#x2F;p&gt;
+&lt;p&gt;What if we kept HTML, but made it do more out-of-the-box? What if instead of building the 5,672nd
+multiselect in [framework of choice], we could instead add a &lt;code&gt;&amp;lt;input type=&amp;quot;multiselect&amp;quot; &#x2F;&amp;gt;&lt;&#x2F;code&gt; to the
+page and be done? Or how many terrabytes of npm packages could be reduced if browsers shipped a
+decent built-in &lt;code&gt;&amp;lt;dialog&amp;gt;&lt;&#x2F;code&gt;?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;“But there IS &lt;code&gt;&amp;lt;select multiple&amp;gt;&lt;&#x2F;code&gt; already!“&lt;&#x2F;em&gt; some will say. But I &lt;em&gt;know&lt;&#x2F;em&gt; you’ve never used that—and
+only that—to add that interaction to your site. It hasn’t worked for mobile devices in years. And I
+&lt;em&gt;know&lt;&#x2F;em&gt; you’ve never used an unstyled &lt;code&gt;&amp;lt;input type=&amp;quot;date&amp;quot;&amp;gt;&lt;&#x2F;code&gt; to fully power your hotel or
+airline-booking website. Google—the biggest advocate for the &lt;code&gt;&amp;lt;dialog&amp;gt;&lt;&#x2F;code&gt; element—doesn’t even use it
+anymore in its Material Design for web.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;“But the Web Components spec!” “But HTML5 was designed to create custom interactions!”&lt;&#x2F;em&gt; I’m not
+saying that there’s been no reason, or thinking, that led us to where we are now. I’m simply
+disagreeing with it.&lt;&#x2F;p&gt;
+&lt;p&gt;Look at how far native development has come—both iOS and Android have common UI that works, and
+works well. Why are the default HTML elements so garbage? And why is it impossible to style most of
+them?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-it-will-help&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-it-will-help&quot; aria-label=&quot;Anchor link for: how-it-will-help&quot;&gt;🔗&lt;&#x2F;a&gt;how it will help&lt;&#x2F;h3&gt;
+&lt;p&gt;For web we spend so much time setting up projects, build tools, and remaking the same UI components
+as others with almost the exact same results, it feels like we’re all too tired by the time we get
+to the actual work. By having a much more usable set of UI components baked into the browser, we
+could more quickly create sites and content.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-get-there&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-get-there&quot; aria-label=&quot;Anchor link for: how-to-get-there&quot;&gt;🔗&lt;&#x2F;a&gt;how to get there&lt;&#x2F;h3&gt;
+&lt;p&gt;We need a new community-oriented HTML spec that saves us from building the same UI elements over and
+over and over again. And we need a new browser that supports all of these. We need &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;whatwg&#x2F;html&quot;&gt;all the 1300+
+proposed elements&lt;&#x2F;a&gt; not &lt;em&gt;only&lt;&#x2F;em&gt; to ship, not &lt;em&gt;only&lt;&#x2F;em&gt; to be stylable (looking at &lt;em&gt;you&lt;&#x2F;em&gt;,
+&lt;code&gt;&amp;lt;progress&amp;gt;&lt;&#x2F;code&gt;), but primarily &lt;strong&gt;to be usable without styling&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;One better future for the internet is if politely, and with all due respect, the HTMLWG takes a seat
+while the community builds one central UI solution to serve the needs of the modern web. We &lt;em&gt;can&lt;&#x2F;em&gt;
+have it if we build it (and if you want to build it, &lt;a href=&quot;mailto:drew@pow.rs&quot;&gt;contact me&lt;&#x2F;a&gt;!).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future-2-bye-bye-browsers-hello-native&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#future-2-bye-bye-browsers-hello-native&quot; aria-label=&quot;Anchor link for: future-2-bye-bye-browsers-hello-native&quot;&gt;🔗&lt;&#x2F;a&gt;future 2: bye bye browsers, hello native&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;lea.verou.me&#x2F;2020&#x2F;05&#x2F;todays-javascript-from-an-outsiders-perspective&#x2F;&quot;&gt;JavaScript is &lt;em&gt;hard&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;. No, not because of the language design. Not because of the
+community. It’s hard &lt;em&gt;in spite&lt;&#x2F;em&gt; of the countless contributions from brilliant individuals &lt;em&gt;who make
+it workable.&lt;&#x2F;em&gt; It’s hard because to make a simple experience for users, one must wield HTML, CSS, and
+JS deftly to cobble together… what? An experience that can be &lt;a href=&quot;https:&#x2F;&#x2F;timkadlec.com&#x2F;remembers&#x2F;2020-04-21-the-cost-of-javascript-frameworks&#x2F;&quot;&gt;slow to load&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;www.nngroup.com&#x2F;articles&#x2F;the-need-for-speed&#x2F;&quot;&gt;bad for
+users&lt;&#x2F;a&gt;, and was an absolute nightmare to assemble.&lt;&#x2F;p&gt;
+&lt;p&gt;What if we ditched all that? What if, instead, we shipped experiences like apps in iOS or Android?
+Consider:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Native apps have &lt;strong&gt;built-in offline mode&lt;&#x2F;strong&gt; (unlike the web, which requires complicated setups like
+service workers)&lt;&#x2F;li&gt;
+&lt;li&gt;Native apps have &lt;strong&gt;unmatched performance,&lt;&#x2F;strong&gt; being compiled rather than runtime scripts&lt;&#x2F;li&gt;
+&lt;li&gt;Native apps are &lt;strong&gt;more bandwidth-efficient&lt;&#x2F;strong&gt; since they don’t have to be redownloaded every time
+they’re used&lt;&#x2F;li&gt;
+&lt;li&gt;Native apps can offer &lt;strong&gt;similar accessibility&lt;&#x2F;strong&gt; because more of the device can be used&lt;&#x2F;li&gt;
+&lt;li&gt;Native apps can offer &lt;strong&gt;a wider range of experiences,&lt;&#x2F;strong&gt; partly by way of being closer to the
+hardware; partly due to the increased performance.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Of course, I’m not saying anything new or revolutionary. The Web vs Native debate has been talked
+about &lt;a href=&quot;https:&#x2F;&#x2F;www.wired.com&#x2F;2010&#x2F;08&#x2F;ff-webrip&#x2F;&quot;&gt;ever since the arrival of the Apple App Store&lt;&#x2F;a&gt; (arguably as a continuation of
+the classic &lt;a href=&quot;http:&#x2F;&#x2F;www.paulgraham.com&#x2F;road.html&quot;&gt;desktop application vs web software debate&lt;&#x2F;a&gt;). But the reality is that
+even Apps need APIs, web servers, HTTP, and all the infrastructure the web resulted in. We’d still
+need REST, GraphQL, and whatever comes next, using the variety of languages we have available. The
+difference is we say goodbye to the browser, and let apps do the heavy lifting now.&lt;&#x2F;p&gt;
+&lt;p&gt;Assume there’s a development environment that lets you build native applications for every target
+(for example, &lt;a href=&quot;https:&#x2F;&#x2F;flutter.dev&#x2F;&quot;&gt;Flutter&lt;&#x2F;a&gt;). Assume that one codebase could generate native clients for all
+major desktop and mobile OSs. Also assume there arises some open way to produce apps that’s not
+gatekept by a corporation like Apple or Google (like npm or GitHub—though corporate entities— have
+fostered an open, community-powered marketplace where anything may be published for free).&lt;&#x2F;p&gt;
+&lt;p&gt;Assuming all those roadblocks were removed, what’s stopping us?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-it-will-help-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-it-will-help-1&quot; aria-label=&quot;Anchor link for: how-it-will-help-1&quot;&gt;🔗&lt;&#x2F;a&gt;how it will help&lt;&#x2F;h3&gt;
+&lt;p&gt;Much of &lt;a href=&quot;https:&#x2F;&#x2F;lea.verou.me&#x2F;2020&#x2F;05&#x2F;todays-javascript-from-an-outsiders-perspective&#x2F;&quot;&gt;JavaScript fatigue&lt;&#x2F;a&gt; and the mountain of complexity comes from us fighting with
+the internet’s original &lt;a href=&quot;&#x2F;blog&#x2F;was-html-a-mistake&#x2F;&quot;&gt;document model&lt;&#x2F;a&gt; that we have outgrown, and abused to all hell to try
+and make rich interactive experiences. The weird place we’re in only came from a (very) winding path
+to where we are now. If we had to recreate web development based on our needs today, I’m convinced
+JavaScript wouldn’t be a part of it. So if we could start over and save everyone’s time, why don’t
+we?&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-get-there-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-get-there-1&quot; aria-label=&quot;Anchor link for: how-to-get-there-1&quot;&gt;🔗&lt;&#x2F;a&gt;how to get there&lt;&#x2F;h3&gt;
+&lt;p&gt;So the trade I’m proposing here is a &lt;em&gt;vastly&lt;&#x2F;em&gt; simpler web environment, and the next-generation of
+experiences. In exchange? We only need to give up the archaic yoke of browsers that have hindered
+progress. We employ a model to experiences similar to npm or GitHub, where experiences can not only
+be downloaded; they can be examined for security.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;“That’ll never happen,”&lt;&#x2F;em&gt; some may say. But let’s put a spin on the current reality for a bit: isn’t
+Google the only way you can use the internet today? Isn’t Google just a shittier app store in its
+current form? What if we could improve everything across the board? We could with native, if we
+solved the discovery and oversight problems.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future-3-jamstack-except-it-works&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#future-3-jamstack-except-it-works&quot; aria-label=&quot;Anchor link for: future-3-jamstack-except-it-works&quot;&gt;🔗&lt;&#x2F;a&gt;future 3: jamstack, except it works&lt;&#x2F;h2&gt;
+&lt;p&gt;In possibly the least sci-fi future, we forge full ahead on the &lt;em&gt;Jamstack&lt;&#x2F;em&gt; (originally &lt;em&gt;J&lt;&#x2F;em&gt;avaScript,
+&lt;em&gt;A&lt;&#x2F;em&gt;PIs, and &lt;em&gt;M&lt;&#x2F;em&gt;arkup—”JAM”—which has &lt;a href=&quot;https:&#x2F;&#x2F;css-tricks.com&#x2F;jamstack-vs-jamstack&#x2F;&quot;&gt;since been broadened&lt;&#x2F;a&gt;), &lt;a href=&quot;https:&#x2F;&#x2F;www.theregister.com&#x2F;2020&#x2F;10&#x2F;13&#x2F;wordpress_matt_vs_netlify_matt&#x2F;&quot;&gt;despite
+oppositions to it&lt;&#x2F;a&gt;. This means that we double-down on our current bets that
+everything will work out, despite billions of dollars being sunk into all its inefficiencies, in the
+hopes that it’ll get better. &lt;em&gt;Why?&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Static Typing in JS&lt;&#x2F;strong&gt;: What if TypeScript became a part of the language spec? It would not only
+mean more reliable applications; it would also &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoland&#x2F;deno&#x2F;issues&#x2F;5432&quot;&gt;drastically simplify and speed up build
+tools&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;ESM is now a thing&lt;&#x2F;strong&gt;: A huge point of complexity &lt;a href=&quot;https:&#x2F;&#x2F;blog.sindresorhus.com&#x2F;webpack-5-headache-b6ac24973bf1&quot;&gt;and headaches&lt;&#x2F;a&gt; has been the
+CommonJS (Node) vs ES Modules divide. With Node.js and JavaScript (and Deno) all moving to one
+module system, it could change the web (we’re also &lt;a href=&quot;https:&#x2F;&#x2F;www.skypack.dev&quot;&gt;betting on this with Skypack&lt;&#x2F;a&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;WASM enters the mainstream&lt;&#x2F;strong&gt;: though WebAssembly didn’t change everything about the web on its
+release, doesn’t mean it isn’t slowly making strides. &lt;a href=&quot;https:&#x2F;&#x2F;2ality.com&#x2F;2020&#x2F;10&#x2F;js-plus-other-languages.html&quot;&gt;wasm-powered tools&lt;&#x2F;a&gt; have been
+skyrocketing lately. &lt;a href=&quot;https:&#x2F;&#x2F;thenewstack.io&#x2F;microsoft-rust-is-the-industrys-best-chance-at-safe-systems-programming&#x2F;#&quot;&gt;Rust is the new darling of software&lt;&#x2F;a&gt;. Arguably the biggest flaw in the
+web’s design is demanding that JavaScript always be used for the client (even as a Node developer
+myself, I realize Node has limitations and can’t realistically power many servers). HTML and CSS
+aside, wouldn’t the web be much easier to build for if the client and server could be written in
+one language?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;All of these are signs towards progress, but there’s one fatal, fatal flaw in this approach:
+&lt;strong&gt;server-side rendering.&lt;&#x2F;strong&gt; Browsers are designed to work best with JavaScript as an accessory; not
+as a foundation. HTML is still queen. Regardless of whether &lt;em&gt;your&lt;&#x2F;em&gt; site can get away with being a
+pure SPA, &lt;a href=&quot;https:&#x2F;&#x2F;www.smashingmagazine.com&#x2F;2018&#x2F;05&#x2F;using-the-web-with-javascript-turned-off&#x2F;&quot;&gt;that won’t cut it for the rest of the web&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-it-will-help-2&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-it-will-help-2&quot; aria-label=&quot;Anchor link for: how-it-will-help-2&quot;&gt;🔗&lt;&#x2F;a&gt;how it will help&lt;&#x2F;h3&gt;
+&lt;p&gt;One could argue this is our current path, merely a projection. This makes the bet that it’ll get
+&lt;em&gt;even worse&lt;&#x2F;em&gt; before it gets better in terms of complexity and knowledge required. But the payoff
+some, new, “holy grail” future framework that will make everyone’s lives easier.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-get-there-2&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-get-there-2&quot; aria-label=&quot;Anchor link for: how-to-get-there-2&quot;&gt;🔗&lt;&#x2F;a&gt;how to get there&lt;&#x2F;h3&gt;
+&lt;p&gt;Several things need to fall in place to &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=rvoZKQn2Go8&amp;amp;list=PLk0Uo6Nr8Xhl7rJggs0d1mdiWZlokMCFm&amp;amp;t=5m22s&quot;&gt;pay down the debt we’ve been accumulating for a while&lt;&#x2F;a&gt;.
+If we &lt;em&gt;do&lt;&#x2F;em&gt; decide that JS is the foundation, and not HTML, then we need build tooling that handles
+all of the above:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can turn JavaScript templates into static HTML easily (in &lt;em&gt;any&lt;&#x2F;em&gt; JavaScript solution, not just My
+Popular Framework™). Also it wouldn’t require Node.js.&lt;&#x2F;li&gt;
+&lt;li&gt;Doesn’t load any JS to the client if it’s not needed.&lt;&#x2F;li&gt;
+&lt;li&gt;When JS does load to make the page interactive, &lt;a href=&quot;https:&#x2F;&#x2F;jasonformat.com&#x2F;islands-architecture&#x2F;&quot;&gt;it only re-renders the interactive
+parts&lt;&#x2F;a&gt;, rather than blocking the main thread and hijacking everything in the browser.&lt;&#x2F;li&gt;
+&lt;li&gt;Doesn’t require &lt;a href=&quot;https:&#x2F;&#x2F;blog.box.com&#x2F;how-we-improved-webpack-build-performance-95&quot;&gt;agonizing compile times&lt;&#x2F;a&gt; that cost time, money, and headaches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;While this the closest direction to the one we‘re heading in, it’s a humbling reminder that some of
+the biggest, hardest pieces have yet to fall in place—mostly the SSR part. And it’ll take a lot of
+work yet before the “bet on JS” has actually paid off.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future-4-a-tale-of-two-webs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#future-4-a-tale-of-two-webs&quot; aria-label=&quot;Anchor link for: future-4-a-tale-of-two-webs&quot;&gt;🔗&lt;&#x2F;a&gt;future 4: a tale of two webs&lt;&#x2F;h2&gt;
+&lt;p&gt;Tom MacWright’s &lt;a href=&quot;https:&#x2F;&#x2F;macwright.com&#x2F;2020&#x2F;08&#x2F;22&#x2F;clean-starts-for-the-web.html&quot;&gt;&lt;em&gt;A clean start for the Web&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; outlines a &lt;em&gt;Document Web&lt;&#x2F;em&gt; and an &lt;em&gt;Application Web&lt;&#x2F;em&gt;
+coexisting, a little like combining futures #1 and #2 above. While this is an idea that I’ve been
+thinking about for a while, I have to give Tom the credit, because he wrote it down and I didn’t
+(also he puts things into words better than me; why are you even reading my blog again? Go read
+his!).&lt;&#x2F;p&gt;
+&lt;p&gt;So one could argue that this is either a &lt;em&gt;migration&lt;&#x2F;em&gt; or &lt;em&gt;experiment&lt;&#x2F;em&gt; towards an alternate future,
+but it may end up being a viable path for longer than Tom devotes space for in his blog post. In
+summary:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Document web&lt;&#x2F;strong&gt; is for reading. Wikipedia, news, blogs, etc. Basically squarely inline with
+HTML’s original design.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Application web&lt;&#x2F;strong&gt; is for everything else: mapping, shopping, games, entertainment. All the rich
+interactive experiences do back to native.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In this world, JavaScript plays a much-reduced role, or even goes away entirely. Browsers become
+more pure “readers,” centralized around delivering static content. Meanwhile, interactive
+experiences become richer and more widespread as thousands of web creatives finally make the leap to
+native development.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-it-will-help-3&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-it-will-help-3&quot; aria-label=&quot;Anchor link for: how-it-will-help-3&quot;&gt;🔗&lt;&#x2F;a&gt;how it will help&lt;&#x2F;h3&gt;
+&lt;p&gt;This pays down the technical debt we’ve been mired in for over a decade, by splitting apart
+concerns. This recognizes that the load we’ve placed upon HTML, CSS, and JS has been too great for
+too long. But rather than force documents to live in native-land (solution #2), we give documents
+their own environment, perfect for them: &lt;em&gt;Document Web&lt;&#x2F;em&gt;. And all the “web app” stuff we architect a
+new medium for.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-get-there-3&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-get-there-3&quot; aria-label=&quot;Anchor link for: how-to-get-there-3&quot;&gt;🔗&lt;&#x2F;a&gt;how to get there&lt;&#x2F;h3&gt;
+&lt;p&gt;I think in this future, too, browsers go away (out of my predictions, that’s 3&#x2F;4 futures, if you’re
+counting at home). Something &lt;em&gt;browserlike&lt;&#x2F;em&gt; will replace it, sure, but would be so reduced in purpose
+I’m not calling it a browser.&lt;&#x2F;p&gt;
+&lt;p&gt;Similarly, we have the same stalemate as future #2 where there is no central service to deliver
+applications other than Apple’s App Store and Google’s Android marketplace. What could that look
+like? What could an app “standard” resemble? And could it be openly-governed?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;we-desperately-need-a-new-future&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#we-desperately-need-a-new-future&quot; aria-label=&quot;Anchor link for: we-desperately-need-a-new-future&quot;&gt;🔗&lt;&#x2F;a&gt;we desperately need a new future&lt;&#x2F;h2&gt;
+&lt;p&gt;Above all else, we really need to change how we build the web not for ourselves, but for those who
+will come after us. The internet was architected to be a bastion of free speech and radical
+democracy, but that light has been fading for some time. I believe the central contributor to this
+is that &lt;strong&gt;only privileged, educated, wealthy individuals have been building on the web&lt;&#x2F;strong&gt;. And so,
+historically, the web has looked, sounded, and gatekept by these elite few.&lt;&#x2F;p&gt;
+&lt;p&gt;Likely none of these will come to pass; likely each of these has a mountain of hidden complexity
+that is harder to overcome and contains more problems than our current system. But I’m a big
+believer in taking a step back, and looking what we have. And I believe that anyone that does this,
+honestly, can’t be satisfied with the web ecosystem we’ve built for ourselves.&lt;&#x2F;p&gt;
+&lt;p&gt;Being dissatisfied with the status quo of &lt;em&gt;how&lt;&#x2F;em&gt; the web is built isn’t just a good idea; &lt;em&gt;it’s
+necessary&lt;&#x2F;em&gt;. &lt;strong&gt;We need it to change.&lt;&#x2F;strong&gt; This web development shit is difficult enough for experts with
+years of experience and education to pull off. Imagine how alienating and frustrating it must be for
+newcomers! And with all that’s going on in the world, we have never needed the internet to be less
+white, and less male, than it is now. &lt;a href=&quot;https:&#x2F;&#x2F;www.cnbc.com&#x2F;2020&#x2F;06&#x2F;12&#x2F;six-years-into-diversity-reports-big-tech-has-made-little-progress.html&quot;&gt;But sadly, that’s not changing.&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Reducing the complexity of the web isn’t just a “nice to have” for our own sakes. It’s the very
+thing that will save our souls.&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>did we fuck up the internet? part 1</title>
 		<published>2020-08-26T00:00:00+00:00</published>
