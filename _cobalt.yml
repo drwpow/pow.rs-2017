@@ -1,0 +1,11 @@
+source: static
+destination: public
+site:
+  title: Drew Powers
+  description: The personal site of Drew Powers
+  base_url: https://pow.rs
+ignore:
+  - static
+  - content
+  - sass
+  - templates
