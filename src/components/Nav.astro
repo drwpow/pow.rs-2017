@@ -1,0 +1,59 @@
+<style>
+.header {
+  --logo-size: 3rem;
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-template-areas: "logo title" "logo nav";
+  grid-template-columns: var(--logo-size) auto;
+}
+
+.img {
+  grid-area: logo;
+  height: var(--logo-size);
+  width: var(--logo-size);
+}
+
+.link {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.linklist {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.navitem {
+  margin: 0 1rem 0 0;
+}
+
+.title {
+  grid-area: title;
+  margin: 0;
+  font-size: var(--f-d2);
+  font-family: var(--body);
+  font-weight: 300;
+}
+</style>
+
+<header class="header pa4">
+  <a class="img" href="/">
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <rect height="512" style="fill:var(--fg)" width="512"/>
+      <path clip-rule="evenodd" d="m352.3 233.1c0 20-8 37.6-22.9 50.9-13.9 12.3-32.5 18.9-53.1 18.9h-72v58.4h-22.9v-201.3h90.1c49.6 0 80.8 28.8 80.8 73.1zm-25.6-.8c0-30.4-21.3-50.9-53.1-50.9h-68.5v37.3h67.7c23.2 0 42.1 18.9 42.1 42.1 0 1.9 0 3.7-.3 5.3 7.5-8.5 12.1-20.2 12.1-33.8zm-80.6 49h-41.1v-41.3h67.7c11.5 0 20.8 9.3 20.8 20.8s-9.3 20.8-20.8 20.8z" style="fill:var(--bg)" fill-rule="evenodd"/>
+    </svg>
+  </a>
+  <h2 class="title">the personal site of drew powers</h2>
+  <nav class="nav">
+    <ul class="linklist">
+      <li class="navitem"><a class="link" href="/" aria-current={Astro.request.url.pathname === '/' ? 'page' : undefined}>Projects</a></li>
+      <li class="navitem"><a class="link" href="/blog" aria-current={Astro.request.url.pathname === '/blog' ? 'page' : undefined}>Blog</a></li>
+      <li class="navitem"><a class="link" href="/about" aria-current={Astro.request.url.pathname === '/about' ? 'page' : undefined}>About</a></li>
+    </ul>
+  </nav>
+</header>
