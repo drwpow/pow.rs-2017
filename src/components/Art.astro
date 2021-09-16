@@ -1,0 +1,86 @@
+---
+import Broadcasts from './art/Broadcasts.astro';
+import Bouncing from './art/Bouncing.astro';
+import IBeams from './art/IBeams.astro';
+import SlidingShoji from './art/SlidingShoji.astro';
+import ThreeRings from './art/ThreeRings.astro';
+
+const { id } = Astro.props;
+---
+
+<style lang="scss">
+.art-description {
+  font-size: var(--d2);
+}
+
+.art-title {
+  margin-left: -0.25em;
+
+  &::before {
+    content: '“';
+  }
+
+  &::after {
+    content: '”';
+  }
+}
+
+.art-meta {
+  padding-left: 2rem;
+}
+
+.art-year {
+  font-size: var(--d2);
+  font-style: italic;
+}
+</style>
+
+{id === 'was-html-a-mistake' && (
+  <IBeams>
+    <div class="art-meta">
+      <div class="art-title">I-Beams</div>
+      <div class="art-description">Sine wave animation</div>
+      <div class="art-year">2020</div>
+    </div>
+  </IBeams>
+)}
+
+{id === 'the-state-of-es-modules-in-2020' && (
+  <Broadcasts>
+    <div class="art-meta">
+      <div class="art-title">Broadcasts</div>
+      <div class="art-description">Cicada Principle animation</div>
+      <div class="art-year">2020</div>
+    </div>
+  </Broadcasts>
+)}
+
+{id === 'media-queries-are-still-a-hack' && (
+  <SlidingShoji>
+    <div class="art-meta">
+      <div class="art-title">Sliding Shoji</div>
+      <div class="art-description">Cicada Principle animation</div>
+      <div class="art-year">2020</div>
+    </div>
+  </SlidingShoji>
+)}
+
+{id === '3-pillars-of-front-end-knowledge' && (
+  <ThreeRings>
+    <div class="art-meta">
+      <div class="art-title">3 Rings</div>
+      <div class="art-description">Cicada Principle animation</div>
+      <div class="art-year">2020</div>
+    </div>
+  </ThreeRings>
+)}
+
+{id === 'playfulness-budget' && (
+  <Bouncing>
+    <div class="art-meta">
+      <div class="art-title">Bouncing</div>
+      <div class="art-description">Cicada Principle animation</div>
+      <div class="art-year">2020</div>
+    </div>
+  </Bouncing>
+)}

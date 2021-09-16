@@ -1,0 +1,16 @@
+{
+  "name": "pow-dot-rs",
+  "private": "true",
+  "version": "5.0.20",
+  "type": "module",
+  "engines": {
+    "node": ">= 14.13"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "devDependencies": {
+    "astro": "^0.20.6"
+  }
+}
