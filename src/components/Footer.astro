@@ -1,6 +1,11 @@
 <style lang="scss">
 .footer {
   font-size: var(--d1);
+  padding: 1.5rem;
+
+  @media (min-width: 600px) {
+    padding: 2rem;
+  }
 }
 
 .link {
@@ -78,8 +83,8 @@ $toggle-ease-out-sine: cubic-bezier(0, 0.5, 0.5, 1);
 
 </style>
 
-<footer class="pa4 footer">
-  <a class="link" href="/blog/atom.xml">
+<footer class="footer">
+  <a class="link" href="/blog.xml">
     <svg aria-label="rss" class="icon mr1r" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <g clip-rule="evenodd" fill-rule="evenodd">
         <path d="M3 11a1 1 0 011-1 10 10 0 0110 10 1 1 0 11-2 0 8 8 0 00-8-8 1 1 0 01-1-1z"></path>
@@ -98,8 +103,11 @@ $toggle-ease-out-sine: cubic-bezier(0, 0.5, 0.5, 1);
     </svg>
     GitHub
   </a>
-  <br/> this website is encrypted and uses <a href="https://www.cloudflare.com/web-analytics/" target="_blank">anonymous analytics</a>.<br/> built with
-  <a href="https://github.com/snowpackjs/astro" rel="noopener noreferrer" target="_blank">Astro</a>, the best static site generator ever made<br/> if you’d like to support this site, tweet or share&nbsp;a&nbsp;link!
+  <br/>
+  this site is encrypted and uses <a href="https://www.cloudflare.com/web-analytics/" target="_blank">anonymous analytics</a>.
+  <br/>
+  built with <a href="https://github.com/snowpackjs/astro" rel="noopener noreferrer" target="_blank">Astro</a>, the best static site generator ever<br/>
+  if you’d like to support this site, tweet or share&nbsp;a&nbsp;link!
   <div class="theme">
     <div class="toggle">
       <input class="toggle-input" id="theme-switcher" type="checkbox" value="dark-mode"/>

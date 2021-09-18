@@ -1,7 +1,7 @@
 ---
-title: was HTML a mistake for the web?
+title: is it time to retire HTML?
 date: 2020-04-19
-updated: 2020-04-19
+updated: 2021-09-18
 description: |
   HTML was designed for basic text editing. How is it still holding up in a world where we’re building rich interactive experiences?
 tags: ['dev']
@@ -9,7 +9,7 @@ layout: ../../layouts/post.astro
 ---
 
 OK, hear me out. Even if [Betteridge is right][betteridge] and the answer at the end of this blog
-post ends up being “no,” let’s treat the question “was HTML a mistake?” purely as a thought
+post ends up being “no,” let’s treat the question “is it time to retire HTML?” purely as a thought
 experiment. And it may shed light on some of the more frustrating parts of making websites.
 
 ## why was HTML created?
@@ -136,7 +136,7 @@ So all that to say, while it’s hard (impossible?) to give an accurate number o
 screen-reader friendly, and thus text-based, it’s safe to say “most.” And if screen reader support
 is essential for most of the internet, **HTML is still the best foundation we have.**
 
-## …so Betteridge was right, then? HTML wasn’t a mistake?
+## …so Betteridge was right, then? HTML still works for now?
 
 Lately I’ve been spending more time with compiled languages (like Rust—which was used to make this
 blog!) and loving them. And I wish we could make the internet more efficient by compiling more (I

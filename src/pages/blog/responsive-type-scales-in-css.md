@@ -1,5 +1,5 @@
 ---
-title: how to handle responsive type scaling in css (easily)
+title: how to handle responsive font sizes in css
 date: 2020-08-02
 description: |
   Get perfect, easy-to-use font scaling with less than 1KB of CSS. Sound too good to be true? It’s not!

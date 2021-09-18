@@ -1,5 +1,5 @@
 ---
-title: 4 tips for setting a playfulness budget"
+title: 4 tips for setting a playfulness budget
 date: 2019-11-06
 updated: 2019-04-19
 description: |

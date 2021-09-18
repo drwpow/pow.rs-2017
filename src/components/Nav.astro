@@ -5,6 +5,13 @@
   grid-column-gap: 1rem;
   grid-template-areas: "logo title" "logo nav";
   grid-template-columns: var(--logo-size) auto;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  @media (min-width: 600px) {
+    padding: 2rem;
+  }
 }
 
 .img {
@@ -41,7 +48,7 @@
 }
 </style>
 
-<header class="header pa4">
+<header class="header">
   <a class="img" href="/">
     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
       <rect height="512" style="fill:var(--fg)" width="512"/>
