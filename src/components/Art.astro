@@ -1,9 +1,12 @@
 ---
-import Broadcasts from './art/Broadcasts.astro';
 import Bouncing from './art/Bouncing.astro';
+import Broadcasts from './art/Broadcasts.astro';
+import Graphe from './art/Graphe.astro';
 import IBeams from './art/IBeams.astro';
+import Sputtering from './art/Sputtering.astro';
 import SlidingShoji from './art/SlidingShoji.astro';
 import ThreeRings from './art/ThreeRings.astro';
+import TeeteringStack from './art/TeeteringStack.astro';
 
 const { id } = Astro.props;
 ---
@@ -34,6 +37,37 @@ const { id } = Astro.props;
   font-style: italic;
 }
 </style>
+
+{id === 'did-we-fuck-up-the-internet-pt-2' && (
+  <TeeteringStack>
+    <div class="art-meta">
+      <div class="art-title">Teetering Stack</div>
+      <div class="art-description">Animation</div>
+      <div class="art-year">2021</div>
+    </div>
+  </TeeteringStack>
+)}
+
+
+{id === 'did-we-fuck-up-the-internet-pt-1' && (
+  <Sputtering>
+    <div class="art-meta">
+      <div class="art-title">Sputtering</div>
+      <div class="art-description">Layered animation</div>
+      <div class="art-year">2021</div>
+    </div>
+  </Sputtering>
+)}
+
+{id === 'responsive-type-scales-in-css' && (
+  <Graphe>
+    <div class="art-meta">
+      <div class="art-title">Graphe</div>
+      <div class="art-description">Cicade principle animation</div>
+      <div class="art-year">2021</div>
+    </div>
+  </Graphe>
+)}
 
 {id === 'was-html-a-mistake' && (
   <IBeams>

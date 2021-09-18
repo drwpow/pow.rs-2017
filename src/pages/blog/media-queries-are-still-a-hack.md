@@ -2,7 +2,7 @@
 title: media queries are (still) a hack
 date: 2020-01-18
 description: |
-  After 15 years of working with CSS, media queries still don’t do enough for me to create responsive designs. To express my frustrations, I had written about half of a blog post under the title <em>Media Queries are a Hack</em> before I discovered that title had been taken. In <strong>2013</strong>. Clearly I’m not as original as I think I am.
+  Media queries are janky. No, it’s not just you.
 tags: ['dev']
 layout: ../../layouts/post.astro
 ---

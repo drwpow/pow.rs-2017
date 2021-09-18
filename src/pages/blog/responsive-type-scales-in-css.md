@@ -1,9 +1,8 @@
 ---
-title: |
-  responsive type scales: the correct way to handle font sizes in css
+title: how to handle responsive type scaling in css (easily)
 date: 2020-08-02
 description: |
-  There actually is an easy, quick way to configure font sizes, it works universally in both CSS and CSS-in-JS, and it’s even responsive. You’re just not using it.
+  Get perfect, easy-to-use font scaling with less than 1KB of CSS. Sound too good to be true? It’s not!
 tags: ['design']
 layout: ../../layouts/post.astro
 ---

@@ -1,9 +1,10 @@
 ---
-title: 4 possible futures for the internet
+title: did we fuck up the internet? part 2
 date: 2020-10-17
-updated: 2020-11-09
+updated: 2021-09-17
 description: |
-  For over a decade we’ve been mired in technical debt, trying to force the web do do everything we need it to. If we reinvented the web today, keeping all its original goals but redoing the technical architecture, what could it look like? And would it be better than where we are now?
+  (cont’d) How could the internet be easier to contribute to? I explore 4 possible ways we could
+  relive some tech debt and get more voices online.
 tags: ['dev']
 layout: ../../layouts/post.astro
 ---
@@ -15,16 +16,16 @@ recap, the internet _is_ in a precarious state, from but not limited to the foll
 - it’s [being actively exploited as the ultimate propaganda machine][facebook]
 - it’s [frustrating and burning out its maintainers][webdev]
 
-But is it unsavable? On the contrary; I still believe the internet itself can be a [powerful vehicle
-for good][social-justice]. I can’t speak on the first 2 problems, but I can on the last topic:
-_frustrating and burning out its maintainers_. Because what better way to save the internet, than to
-make the barrier to entry as low as possible to allow the right people to help build it?
+The [first][protectors] and [second][propaganda] problems are not only beyond my pay grade; they’ve
+been covered at length elsewhere. But I am here to speak on “frustrating and burning out its
+maintainers.” What better way to save the internet than to make its barrier to entry as low as
+possible?
 
-So in that vein, I think the internet is long overdue for a (realistic) reimagining. Keep in mind
-what follows is complete imagination; an utter shot in the dark. Assume HTTP and the underlying
-protocols all still exist, but what if we could reinvent the fragmented HTML/CSS/JS mega-ecosystem
-with all the server-side languages, frameworks, preprocessors, and bells and whistles that come with
-it? And if we did, could we make lives easier? Here are 4 ideas to make web dev more maintainable:
+In that vein, I think the internet is long overdue for a (realistic) reimagining. Keep in mind what
+follows is complete imagination; an utter shot in the dark. Assume HTTP and the underlying protocols
+all still exist, but what if we could reinvent the fragmented HTML/CSS/JS mega-ecosystem with all
+the server-side languages, frameworks, preprocessors, and bells and whistles that come with it? And
+if we did, could we make lives easier? Here are 4 ideas to make web dev more maintainable:
 
 ## future 1: overhaul HTML
 
@@ -270,12 +271,12 @@ thing that will save our souls.
 [nng-js]: https://www.nngroup.com/articles/the-need-for-speed/
 [no-js]: https://www.smashingmagazine.com/2018/05/using-the-web-with-javascript-turned-off/
 [other-road-ahead]: http://www.paulgraham.com/road.html
+[protectors]: https://www.wired.co.uk/article/google-chrome-browser-data
+[propaganda]: https://www.thesocialdilemma.com/
 [pt1]: /blog/did-we-fuck-up-the-internet-pt-1
 [rust]:
   https://thenewstack.io/microsoft-rust-is-the-industrys-best-chance-at-safe-systems-programming/#
 [skypack]: https://www.skypack.dev
-[social-justice]:
-  https://www.newyorker.com/culture/cultural-comment/the-second-act-of-social-media-activism
 [tm]: https://macwright.com/2020/08/22/clean-starts-for-the-web.html
 [wasm]: https://2ality.com/2020/10/js-plus-other-languages.html
 [web-is-dead]: https://www.wired.com/2010/08/ff-webrip/

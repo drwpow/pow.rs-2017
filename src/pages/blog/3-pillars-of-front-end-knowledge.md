@@ -3,7 +3,7 @@ title: the great(er) divide in front-end
 date: 2020-02-17
 updated: 2020-04-19
 description: |
-  My initial reaction to Chris Coyier’s <em>The Great Divide</em> post almost a year ago was to reject it. To be blunt, I saw it as someone who made their career on CSS attacking the good work that JavaScript folks had been doing because it threatened his career (I say that as someone respects Chris immensely, but people are allowed to be wrong in blog posts).
+  A year of reflecting on Chris Coyier’s <em>The Great Divide</em> post. I think it holds up, but requires a little more nuance.
 tags: ['dev']
 layout: ../../layouts/post.astro
 ---

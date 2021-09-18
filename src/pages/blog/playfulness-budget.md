@@ -3,7 +3,7 @@ title: 4 tips for setting a playfulness budget"
 date: 2019-11-06
 updated: 2019-04-19
 description: |
-  All of us can recall being frustrated by a website or app, as well as inspired and entertained. Sometimes those feelings can happen with the same app, either at different points in the experience or perhaps we were in a different state of mind. Application design always walks a tightrope between utility and whimsy. An app must use familiar patterns to be usable, but if <em>nothing</em> new is introduced it will be a forgettable experience. But while <em>some</em> novelty is required, if <em>everything</em> reinvents the wheel you’ve created a frustrating experience that users are lost in. How do you find a balance?
+  At what point does whimsy and “delight” turn into user frustration?
 tags: ['design']
 layout: ../../layouts/post.astro
 ---

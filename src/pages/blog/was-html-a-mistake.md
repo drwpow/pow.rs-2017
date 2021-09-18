@@ -1,9 +1,9 @@
 ---
-title: was HTML a mistake?
+title: was HTML a mistake for the web?
 date: 2020-04-19
 updated: 2020-04-19
 description: |
-  OK, hear me out. Even if Betteridge is right and the answer at the end of this blog post ends up being “no,” let’s treat the question “was HTML a mistake?” purely as a thought experiment. And it may shed light on some of the more frustrating parts of making websites.
+  HTML was designed for basic text editing. How is it still holding up in a world where we’re building rich interactive experiences?
 tags: ['dev']
 layout: ../../layouts/post.astro
 ---

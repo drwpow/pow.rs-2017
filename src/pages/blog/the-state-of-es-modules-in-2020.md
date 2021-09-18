@@ -1,9 +1,9 @@
 ---
-title: JavaScript's greatest revolution was too quiet
+title: not enough people are talking about ES Modules
 date: 2020-03-08
 updated: 2020-04-21
 description: |
-  <strong>In 2019, a revolution happened in JS.</strong> You may have missed it. All major browsers and Node.js added native support for ES Modules (ESM)—no Babel, transpiling, preprocessing, or trickery needed.
+  JavaScript changed forever in 2019. Did you miss it?
 tags: ['dev']
 layout: ../../layouts/post.astro
 ---

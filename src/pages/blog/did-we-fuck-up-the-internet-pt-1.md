@@ -1,9 +1,9 @@
 ---
 title: did we fuck up the internet? part 1
 date: 2020-08-26
-updated: 2020-09-08
+updated: 2021-09-17
 description: |
-  2020 has been… a year. Amdist a global pandemic, collapse of the United States, and other acts of God, several events transpired this year that has made us question the internet’s trajectory. Are we boned?
+  Are the internet’s designers and maintainers holding the internet back from what it could be?
 tags: ['dev']
 layout: ../../layouts/post.astro
 ---
