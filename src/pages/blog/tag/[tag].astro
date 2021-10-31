@@ -12,13 +12,15 @@ export async function getStaticPaths() {
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   const tags = new Set();
   for (const post of posts) {
-    for (const tag of post.tags) {
-      tags.add(tag);
+    if (Array.isArray(post.tags)) {
+      for (const tag of post.tags) {
+        tags.add(tag);
+      }
     }
   }
   return [...tags].map((tag) => ({
     params: { tag },
-    props: { posts: posts.filter((post) => post.tags.includes(tag)) },
+    props: { posts: posts.filter((post) => Array.isArray(post.tags) && post.tags.includes(tag)) },
   }));
 }
 ---
