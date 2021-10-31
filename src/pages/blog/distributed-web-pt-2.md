@@ -1,14 +1,14 @@
 ---
-title: when does a business need a website?
-description: when is the best time to invest?
+title: 'the distributed web part 2: …or do you?'
+description: when is it time to pony up for custom development?
 date: 2016-02-07
 tags: ['strategy']
 layout: ../../layouts/post.astro
 ---
 
-_This is a follow-up to [You Don’t Need a Website](/blog/you-dont-need-a-website/)_.
+_This is a follow-up to [You Don’t Need a Website](/blog/distributed-web-pt-1/)_.
 
-<figure><img src="https://miro.medium.com/max/5450/1*XSds7xIl_TFMDVBzbdB7Dg.jpeg"><figcaption>Illustration by
+<figure><img src="/assets/posts/distributed-web-pt-2/2016-02-distributed-web-pt-2.jpg"><figcaption>Illustration by
 Drew Powers</figcaption></figure>
 
 ## Building the Factory

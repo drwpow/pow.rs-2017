@@ -1,7 +1,7 @@
 ---
 title: did we fuck up the internet? part 2
 date: 2020-10-17
-updated: 2021-09-17
+updated: 2021-10-30
 description: |
   (cont’d) How could the internet be easier to contribute to? I explore 4 possible ways we could
   relive some tech debt and get more voices online.
@@ -41,7 +41,8 @@ same UI components, over, and over, and over (and over) again.
 </figure>
 
 Although one solution to alleviate this sisyphean task would be to ditch HTML and the “document”
-idea altogether, HTML is responsible for some of the most accessible interfaces we’ve ever built.
+idea altogether,
+[HTML is responsible for some of the most accessible interfaces we’ve ever built](/blog/was-html-a-mistake/).
 Screen readers and a suite of tools revolve around HTML’s design, so simply throwing it away would
 mean decades of setback for less-abled individuals.
 
@@ -102,12 +103,12 @@ Consider:
 - Native apps can offer **a wider range of experiences,** partly by way of being closer to the
   hardware; partly due to the increased performance.
 
-Of course, I’m not saying anything new or revolutionary. The Web vs Native debate has been talked
-about [ever since the arrival of the Apple App Store][web-is-dead] (arguably as a continuation of
-the classic [desktop application vs web software debate][other-road-ahead]). But the reality is that
-even Apps need APIs, web servers, HTTP, and all the infrastructure the web resulted in. We’d still
-need REST, GraphQL, and whatever comes next, using the variety of languages we have available. The
-difference is we say goodbye to the browser, and let apps do the heavy lifting now.
+I know I’m guilty here of comparing _the best_ native apps to _the average_ website, and there’s not
+a clear winner (I would be out of a job if that were the case!). The Web vs Native debate has been
+talked about [ever since the arrival of the Apple App Store][web-is-dead] (arguably as a
+continuation of the classic [desktop application vs web software debate][other-road-ahead]). But I’m
+just saying I believe _Native Apps conceptually make more sense than web for task-based
+applications_.
 
 Assume there’s a development environment that lets you build native applications for every target
 (for example, [Flutter][flutter]). Assume that one codebase could generate native clients for all

@@ -1,12 +1,12 @@
 ---
-title: you don’t need a website
+title: 'the distributed web part 1: you don’t need a website'
 description: when to not get sold by marketing speak
-date: 2016-01-25
+date: 2015-08-20
 tags: ['strategy']
 layout: ../../layouts/post.astro
 ---
 
-<figure><img src="https://miro.medium.com/max/4880/1*craWlUYS1LQolocKzNb6SA.jpeg"><figcaption>Illustration by
+<figure><img src="/assets/posts/distributed-web-pt-1/city.jpg"><figcaption>Illustration by
 Drew Powers</figcaption></figure>
 
 As a business, your goal is basically two-fold: provide a product or service, and raise awareness of

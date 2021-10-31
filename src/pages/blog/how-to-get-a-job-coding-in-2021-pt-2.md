@@ -81,7 +81,7 @@ to CSS utilities. It’s a lot to learn! But as always, start with the basics.
 1. [Learn CSS][css]. Now we’re cookin’!
 1. Learn a framework\* such as React, Vue, or Svelte. My personal opinion is I find [Vue][vue] to be
    not only the easiest to learn after learning HTML, but it’s also powerful, widely-used, and
-   teeaches good habits.
+   teaches good habits.
 
 _\* Note: my advice to learn a framework first is considered controversial to some, with many
 recommended tackling plain, raw JavaScript instead. I advocate for JS frameworks in the beginning
