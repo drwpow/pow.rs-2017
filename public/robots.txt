@@ -1,3 +1,0 @@
-User-agent: zola
-Allow: /
-Sitemap: https://pow.rs/sitemap.xml
