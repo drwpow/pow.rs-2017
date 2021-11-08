@@ -1,4 +1,4 @@
-# pow.rs (2017–2019)
+# pow.rs (2017–2021)
 
 Personal site for a fella named Drew Powers.
 
